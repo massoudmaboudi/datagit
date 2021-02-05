@@ -1,4 +1,13 @@
 module.exports = {
+  i18n: {
+    defaultLocale: "fa_IR",
+    locales: ["fa_IR"],
+    localeConfigs: {
+      'fa_IR': {
+        direction: "ltr"
+      }
+    }
+  },
   title: 'دیتاگیت',
   tagline: 'همیشه راه ساده تری هم هست.',
   url: 'https://massoudmaboudi.github.io',
