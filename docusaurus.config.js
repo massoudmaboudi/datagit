@@ -4,7 +4,7 @@ module.exports = {
     locales: ["fa_IR"],
     localeConfigs: {
       'fa_IR': {
-        direction: "ltr"
+        direction: "rtl"
       }
     }
   },
@@ -50,6 +50,9 @@ module.exports = {
 
       // Hides the switch in the navbar
       disableSwitch: true,
+
+      // Important to enforce light mode
+      respectPrefersColorScheme: false,
     },
     navbar: {
       // hideOnScroll: true,
