@@ -41,6 +41,9 @@ module.exports = {
 
       // Hides the switch in the navbar
       disableSwitch: true,
+      
+      // Important to enforce light mode
+      respectPrefersColorScheme: false,
     },
     navbar: {
       // hideOnScroll: true,
