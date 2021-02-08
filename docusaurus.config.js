@@ -4,7 +4,7 @@ module.exports = {
     locales: ["fa_IR"],
     localeConfigs: {
       'fa_IR': {
-        direction: "ltr"
+        direction: "rtl"
       }
     }
   },
