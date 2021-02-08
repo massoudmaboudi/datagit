@@ -18,6 +18,15 @@
   --ifm-code-font-size: 95%;
 }
 
+html,
+body {
+    height: 100%;
+    direction: rtl;
+    font-family: "Nunito Sans", "Iran Sans";
+    font-weight: 400;
+    color: var(--ifm-color-primary);
+}
+
 p {
   text-align: justify;
 }
