@@ -21,7 +21,6 @@
 html,
 body {
     height: 100%;
-    direction: rtl;
     font-family: "Nunito Sans", "Iran Sans";
     font-weight: 400;
     color: var(--ifm-color-primary);
@@ -46,12 +45,15 @@ img {
   padding: 0 var(--ifm-pre-padding);
 }
 
+/*
 .tabs {
   direction: ltr;
 }
+ */
 
 /* Navbar */
 
+/*
 .navbar-sidebar {
   transform: translateX(100%);
   right: 0;
@@ -72,9 +74,11 @@ img {
   margin-right: 0.3em;
   border-radius: var(--ifm-global-radius);
 }
+ */
 
 /* DocSidebar */
 
+/*
 .menu__list {
   padding-right: 0;
 }
@@ -98,17 +102,21 @@ img {
   left: 1rem;
   z-index: 1;
 }
+ */
 
 /* DocsPagination */
 
+/*
 .pagination-nav__item + .pagination-nav__item {
   margin-left: 0;
   margin-right: var(--ifm-spacing-horizontal);
   text-align: left;
 }
+ */
 
 /* TOC */
 
+/*
 .table-of-contents,
 .table-of-contents ul {
   padding-left: 0;
@@ -119,20 +127,25 @@ img {
   border-left: none;
   border-right: 1px solid var(--ifm-toc-border-color);
 }
+ */
 
 /* Admonitions */
 
+/*
 .admonition-icon {
   margin-right: 0;
   margin-left: 0.2rem;
 }
+ */
 
 /* Blog */
 
+/*
 .avatar__photo + .avatar__intro {
   margin-left: 0;
   margin-right: var(--ifm-avatar-intro-margin);
 }
+ */
 
 /* Fonts */
 
