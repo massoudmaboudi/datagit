@@ -5,17 +5,17 @@
  * LICENSE file in the root directory of this source tree.
  */
 
- .docTitle {
+.docTitle {
   font-size: 2.5rem;
-  margin-bottom: calc(var(--ifm-leading-desktop) * var(--ifm-leading) * 2);
+  margin-bottom: calc(var(--ifm-leading-desktop) * var(--ifm-leading));
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 1.9rem !important;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
 }
 
 .docItemContainer {
@@ -39,7 +39,7 @@ h3 {
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
   }
 
   h3 {

@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import DocPaginator from '@theme/DocPaginator';
 import DocVersionSuggestions from '@theme/DocVersionSuggestions';
 import TOC from '@theme/TOC';
-import IconEdit from '@theme/IconEdit';
+import EditThisPage from '@theme/EditThisPage';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import { useActivePlugin, useVersions, useActiveVersion } from '@theme/hooks/useDocs';
@@ -95,10 +95,7 @@ function DocItem(props) {
             {(editUrl || lastUpdatedAt || lastUpdatedBy) && <div className="margin-vert--xl">
                 <div className="row">
                   <div className="col">
-                    {editUrl && <a href={editUrl} target="_blank" rel="noreferrer noopener">
-                        <IconEdit />
-                        Edit this page
-                      </a>}
+                    {editUrl && <EditThisPage editUrl={editUrl} />}
                   </div>
                   {(lastUpdatedAt || lastUpdatedBy) && <div className="col text--right">
                       <em>
