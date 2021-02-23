@@ -6,8 +6,16 @@
  */
 
 .docTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: calc(var(--ifm-leading-desktop) * var(--ifm-leading));
+}
+
+h2 {
+  font-size: 1.9rem !important;
+}
+
+h3 {
+  font-size: 1.3rem !important;
 }
 
 .docItemContainer {
@@ -24,6 +32,18 @@
 @media only screen and (max-width: 996px) {
   .docItemContainer {
     padding: 0 0.3rem;
+  }
+
+  .docTitle {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem;
   }
 }
 
