@@ -1,0 +1,150 @@
+{
+  "theme.NotFound.title": {
+    "message": "صفحه‌ای که دنبال آن بودید پیدا نشد!",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "متاسفانه نتوانستیم مطلب مورد نظر شما را پیدا کنیم.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "لطفا با صاحب وبسایت تماس بگیرید و ایشان را از مشکل پیش آمده مطلع کنید.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "بستن",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "کنترل لیست صفحه وبسایت",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "مطالب جدیدتر",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "مطالب قدیمی تر",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": ":برچسب ها",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.post.readMore": {
+    "message": "ادامه مطلب",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "کنترل پست های صفحه وبلاگ",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "پست های جدید تر",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "پست های قدیمی تر",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "برچسب ها",
+    "description": "The title of the tag list page"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "مشاهده تمام برچسب ها",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "کپی کردن کد به کلیپ بورد",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "کپی شد",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "کپی کردن",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "بزرگ کردن نوار کناری",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "بزرگ کردن نوار کناری",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "کنترل صفحه اسناد",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "قبلی",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "بعدی",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.sidebar.responsiveCloseButtonLabel": {
+    "message": "بستن منو",
+    "description": "The ARIA label for close button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.responsiveOpenButtonLabel": {
+    "message": "باز کردن منو",
+    "description": "The ARIA label for open button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "بستن نوار کناری",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "بستن نوار کناری",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.common.editThisPage": {
+    "message": "ویرایش صفحه",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "لینک مستقیم به عنوان",
+    "description": "Title for link to heading"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "رفتن به مطلب اصلی",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "جستجو برای عبارت",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "جستجو در متن",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "عبارت مورد نظر را اینجا بنویسید",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "جستجو",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "جستجو با Algolia",
+    "description": "The ARIA label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "هیچ نتیجه ای پیدا نشد",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "در حال دریافت نتایج...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchBar.label": {
+    "message": "جستجو",
+    "description": "The ARIA label and placeholder for search button"
+  }
+}
