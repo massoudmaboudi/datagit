@@ -14,9 +14,9 @@
     "translate:fa": "docusaurus write-translations --locale fa_IR"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.780afe527",
-    "@docusaurus/plugin-ideal-image": "2.0.0-alpha.780afe527",
-    "@docusaurus/preset-classic": "2.0.0-alpha.780afe527",
+    "@docusaurus/core": "2.0.0-alpha.9f5f3931c",
+    "@docusaurus/plugin-ideal-image": "2.0.0-alpha.9f5f3931c",
+    "@docusaurus/preset-classic": "2.0.0-alpha.9f5f3931c",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "react": "^16.8.4",

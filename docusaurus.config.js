@@ -50,7 +50,7 @@ module.exports = {
 
       // Hides the switch in the navbar
       disableSwitch: true,
-      
+
       // Important to enforce light mode
       respectPrefersColorScheme: false,
     },
@@ -266,7 +266,6 @@ module.exports = {
       '@docusaurus/plugin-sitemap',
       {
         id: 'sitemap',
-        cacheTime: 600 * 1000, // 600 sec - cache purge period
         changefreq: 'weekly',
         priority: 0.5,
         trailingSlash: false,
