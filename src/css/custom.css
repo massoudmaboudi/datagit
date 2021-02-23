@@ -57,12 +57,6 @@ img {
   max-width: 2rem;
 }
 
-/* CodeBlock */
-
-.codeBlockContent {
-  direction: ltr !important;
-}
-
 /*
 .tabs {
   direction: ltr;
