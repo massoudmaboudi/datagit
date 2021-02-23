@@ -6,13 +6,26 @@
  */
 import React from 'react';
 import clsx from 'clsx';
-import { MDXProvider } from '@mdx-js/react';
-import Head from '@docusaurus/Head';
+import {MDXProvider} from '@mdx-js/react';
+import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 import MDXComponents from '@theme/MDXComponents';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import Seo from '@theme/Seo';
 import styles from './styles.module.css';
-const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
 
 function BlogPostItem(props) {
   const {
@@ -20,26 +33,14 @@ function BlogPostItem(props) {
     frontMatter,
     metadata,
     truncated,
-    isBlogPostPage = false
+    isBlogPostPage = false,
   } = props;
-  const {
-    date,
-    permalink,
-    tags,
-    readingTime
-  } = metadata;
-  const {
-    author,
-    title,
-    image,
-    keywords
-  } = frontMatter;
+  const {date, permalink, tags, readingTime} = metadata;
+  const {author, title, image, keywords} = frontMatter;
   const authorURL = frontMatter.author_url || frontMatter.authorURL;
   const authorTitle = frontMatter.author_title || frontMatter.authorTitle;
-  const authorImageURL = frontMatter.author_image_url || frontMatter.authorImageURL;
-  const imageUrl = useBaseUrl(image, {
-    absolute: true
-  });
+  const authorImageURL =
+    frontMatter.author_image_url || frontMatter.authorImageURL;
 
   const renderPostHeader = () => {
     const TitleHeading = isBlogPostPage ? 'h1' : 'h2';
@@ -47,8 +48,10 @@ function BlogPostItem(props) {
     const year = match[0];
     const month = MONTHS[parseInt(match[1], 10) - 1];
     const day = parseInt(match[2], 10);
-    return <header>
-        <TitleHeading className={clsx('margin-bottom--sm', styles.blogPostTitle)}>
+    return (
+      <header>
+        <TitleHeading
+          className={clsx('margin-bottom--sm', styles.blogPostTitle)}>
           {isBlogPostPage ? title : <Link to={permalink}>{title}</Link>}
         </TitleHeading>
         <div className="margin-vert--md">
@@ -58,54 +61,81 @@ function BlogPostItem(props) {
           </time>
         </div>
         <div className="avatar margin-vert--md">
-          {authorImageURL && <a className="avatar__photo-link avatar__photo" href={authorURL} target="_blank" rel="noreferrer noopener">
+          {authorImageURL && (
+            <Link className="avatar__photo-link avatar__photo" href={authorURL}>
               <img src={authorImageURL} alt={author} />
-            </a>}
+            </Link>
+          )}
           <div className="avatar__intro">
-            {author && <>
+            {author && (
+              <>
                 <h4 className="avatar__name">
-                  <a href={authorURL} target="_blank" rel="noreferrer noopener">
-                    {author}
-                  </a>
+                  <Link href={authorURL}>{author}</Link>
                 </h4>
                 <small className="avatar__subtitle">{authorTitle}</small>
-              </>}
+              </>
+            )}
           </div>
         </div>
-      </header>;
+      </header>
+    );
   };
 
-  return <>
-      <Head>
-        {keywords && keywords.length && <meta name="keywords" content={keywords.join(',')} />}
-        {image && <meta property="og:image" content={imageUrl} />}
-        {image && <meta name="twitter:image" content={imageUrl} />}
-        {image && <meta name="twitter:image:alt" content={`Image for ${title}`} />}
-      </Head>
+  return (
+    <>
+      <Seo
+        {...{
+          keywords,
+          image,
+        }}
+      />
 
       <article className={!isBlogPostPage ? 'margin-bottom--xl' : undefined}>
         {renderPostHeader()}
-        <section className="markdown">
+        <div className="markdown">
           <MDXProvider components={MDXComponents}>{children}</MDXProvider>
-        </section>
-        {(tags.length > 0 || truncated) && <footer className="row margin-vert--lg">
-            {tags.length > 0 && <div className="col">
-                <strong>برچسب ها:</strong>
-                {tags.map(({
-            label,
-            permalink: tagPermalink
-          }) => <Link key={tagPermalink} className="margin-horiz--sm" to={tagPermalink}>
+        </div>
+        {(tags.length > 0 || truncated) && (
+          <footer className="row margin-vert--lg">
+            {tags.length > 0 && (
+              <div className="col">
+                <strong>
+                  <Translate
+                    id="theme.tags.tagsListLabel"
+                    description="The label alongside a tag list">
+                    Tags:
+                  </Translate>
+                </strong>
+                {tags.map(({label, permalink: tagPermalink}) => (
+                  <Link
+                    key={tagPermalink}
+                    className="margin-horiz--sm"
+                    to={tagPermalink}>
                     {label}
-                  </Link>)}
-              </div>}
-            {truncated && <div className="col text--right">
-                <Link to={metadata.permalink} aria-label={`Read more about ${title}`}>
-                  <strong>ادامه مطلب</strong>
+                  </Link>
+                ))}
+              </div>
+            )}
+            {truncated && (
+              <div className="col text--right">
+                <Link
+                  to={metadata.permalink}
+                  aria-label={`Read more about ${title}`}>
+                  <strong>
+                    <Translate
+                      id="theme.blog.post.readMore"
+                      description="The label used in blog post item excerpts to link to full blog posts">
+                      Read More
+                    </Translate>
+                  </strong>
                 </Link>
-              </div>}
-          </footer>}
+              </div>
+            )}
+          </footer>
+        )}
       </article>
-    </>;
+    </>
+  );
 }
 
 export default BlogPostItem;
