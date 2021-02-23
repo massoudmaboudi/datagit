@@ -9,23 +9,21 @@ import Layout from '@theme/Layout';
 import BlogPostItem from '@theme/BlogPostItem';
 import Link from '@docusaurus/Link';
 import BlogSidebar from '@theme/BlogSidebar';
+import Translate from '@docusaurus/Translate';
 
 function pluralize(count, word) {
   return count > 1 ? `${word}s` : word;
 }
 
 function BlogTagsPostPage(props) {
-  const {
-    metadata,
-    items,
-    sidebar
-  } = props;
-  const {
-    allTagsPath,
-    name: tagName,
-    count
-  } = metadata;
-  return <Layout title={`Posts tagged "${tagName}"`} description={`Blog | Tagged "${tagName}"`} wrapperClassName="blog-wrapper">
+  const {metadata, items, sidebar} = props;
+  const {allTagsPath, name: tagName, count} = metadata; // TODO soon: translate hardcoded labels, but factorize them (blog + docs will both have tags)
+
+  return (
+    <Layout
+      title={`Posts tagged "${tagName}"`}
+      description={`Blog | Tagged "${tagName}"`}
+      wrapperClassName="blog-wrapper">
       <div className="container margin-vert--lg">
         <div className="row">
           <div className="col col--2">
@@ -36,18 +34,29 @@ function BlogTagsPostPage(props) {
               {count} پست با برچسب &quot;{tagName}
               &quot;
             </h1>
-            <Link href={allTagsPath}>مشاهده تمام برچسب ها</Link>
+            <Link href={allTagsPath}>
+              <Translate
+                id="theme.tags.tagsPageLink"
+                description="The label of the link targeting the tag list page">
+                View All Tags
+              </Translate>
+            </Link>
             <div className="margin-vert--xl">
-              {items.map(({
-              content: BlogPostContent
-            }) => <BlogPostItem key={BlogPostContent.metadata.permalink} frontMatter={BlogPostContent.frontMatter} metadata={BlogPostContent.metadata} truncated>
+              {items.map(({content: BlogPostContent}) => (
+                <BlogPostItem
+                  key={BlogPostContent.metadata.permalink}
+                  frontMatter={BlogPostContent.frontMatter}
+                  metadata={BlogPostContent.metadata}
+                  truncated>
                   <BlogPostContent />
-                </BlogPostItem>)}
+                </BlogPostItem>
+              ))}
             </div>
           </main>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 }
 
 export default BlogTagsPostPage;
