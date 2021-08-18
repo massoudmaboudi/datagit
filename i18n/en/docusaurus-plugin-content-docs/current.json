@@ -1,0 +1,70 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.پایتون": {
+    "message": "پایتون",
+    "description": "The label for category پایتون in sidebar docs"
+  },
+  "sidebar.docs.category.آموزش مقدماتی": {
+    "message": "آموزش مقدماتی",
+    "description": "The label for category آموزش مقدماتی in sidebar docs"
+  },
+  "sidebar.docs.category.کیلومترِ صفر": {
+    "message": "کیلومترِ صفر",
+    "description": "The label for category کیلومترِ صفر in sidebar docs"
+  },
+  "sidebar.docs.category.مقدمه": {
+    "message": "مقدمه",
+    "description": "The label for category مقدمه in sidebar docs"
+  },
+  "sidebar.docs.category.توابع": {
+    "message": "توابع",
+    "description": "The label for category توابع in sidebar docs"
+  },
+  "sidebar.docs.category.انواع داده": {
+    "message": "انواع داده",
+    "description": "The label for category انواع داده in sidebar docs"
+  },
+  "sidebar.docs.category.توابع شرطی و حلقه های تکرار": {
+    "message": "توابع شرطی و حلقه های تکرار",
+    "description": "The label for category توابع شرطی و حلقه های تکرار in sidebar docs"
+  },
+  "sidebar.docs.category.گیت": {
+    "message": "گیت",
+    "description": "The label for category گیت in sidebar docs"
+  },
+  "sidebar.python.category.آموزش مقدماتی": {
+    "message": "آموزش مقدماتی",
+    "description": "The label for category آموزش مقدماتی in sidebar python"
+  },
+  "sidebar.python.category.کیلومترِ صفر": {
+    "message": "کیلومترِ صفر",
+    "description": "The label for category کیلومترِ صفر in sidebar python"
+  },
+  "sidebar.python.category.مقدمه": {
+    "message": "مقدمه",
+    "description": "The label for category مقدمه in sidebar python"
+  },
+  "sidebar.python.category.توابع": {
+    "message": "توابع",
+    "description": "The label for category توابع in sidebar python"
+  },
+  "sidebar.python.category.انواع داده": {
+    "message": "انواع داده",
+    "description": "The label for category انواع داده in sidebar python"
+  },
+  "sidebar.python.category.توابع شرطی و حلقه های تکرار": {
+    "message": "توابع شرطی و حلقه های تکرار",
+    "description": "The label for category توابع شرطی و حلقه های تکرار in sidebar python"
+  },
+  "sidebar.git.category.آموزش مقدماتی": {
+    "message": "آموزش مقدماتی",
+    "description": "The label for category آموزش مقدماتی in sidebar git"
+  },
+  "sidebar.git.category.کیلومترِ صفر": {
+    "message": "کیلومترِ صفر",
+    "description": "The label for category کیلومترِ صفر in sidebar git"
+  }
+}

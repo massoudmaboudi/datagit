@@ -2,10 +2,15 @@ module.exports = {
 
   i18n: {
     defaultLocale: "fa",
-    locales: ["fa"],
+    locales: ["fa", "en"],
     localeConfigs: {
       'fa': {
+        label: "فارسی",
         direction: "rtl"
+      },
+      'en': {
+        label: "English",
+        direction: "ltr"
       }
     }
   },
@@ -51,40 +56,81 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/python/introduction',
-          // activeBasePath: 'docs',
-          label: 'پایتون',
+          label: 'دسته‌بندی‌ها',
           position: 'left',
           items: [
             {
-              label: 'معرفی',
+              // to: 'docs/python/introduction',
+              // activeBasePath: 'docs',
+              label: 'پایتون',
               to: 'docs/python/introduction',
+              // items: [
+              //   {
+              //     label: 'معرفی',
+              //     to: 'docs/python/introduction',
+              //   },
+              //   {
+              //     label: 'آموزش مقدماتی',
+              //     to: 'docs/python/beginner/introduction',
+              //   },
+              //   {
+              //     label: 'Matplotlib',
+              //     to: 'docs/',
+              //   },
+              // ],
             },
             {
-              label: 'آموزش مقدماتی',
-              to: 'docs/python/beginner/introduction',
-            },
-            // {
-            //   label: 'Matplotlib',
-            //   to: 'docs/',
-            // },
-          ],
-        },
-        {
-          to: 'docs/git/introduction',
-          label: 'گیت',
-          position: 'left',
-          items: [
-            {
-              label: 'معرفی',
               to: 'docs/git/introduction',
+              label: 'گیت',
+              // position: 'left',
+              // items: [
+              //   {
+              //     label: 'معرفی',
+              //     to: 'docs/git/introduction',
+              //   },
+              //   {
+              //     label: 'آموزش مقدماتی',
+              //     to: 'docs/git/beginner/introduction',
+              //   },
+              // ],
             },
-            {
-              label: 'آموزش مقدماتی',
-              to: 'docs/git/beginner/introduction',
-            },
-          ],
+          ]
         },
+        // {
+        //   // to: 'docs/python/introduction',
+        //   // activeBasePath: 'docs',
+        //   label: 'پایتون',
+        //   position: 'left',
+        //   items: [
+        //     {
+        //       label: 'معرفی',
+        //       to: 'docs/python/introduction',
+        //     },
+        //     {
+        //       label: 'آموزش مقدماتی',
+        //       to: 'docs/python/beginner/introduction',
+        //     },
+        //     // {
+        //     //   label: 'Matplotlib',
+        //     //   to: 'docs/',
+        //     // },
+        //   ],
+        // },
+        // {
+        //   to: 'docs/git/introduction',
+        //   label: 'گیت',
+        //   position: 'left',
+        //   items: [
+        //     {
+        //       label: 'معرفی',
+        //       to: 'docs/git/introduction',
+        //     },
+        //     {
+        //       label: 'آموزش مقدماتی',
+        //       to: 'docs/git/beginner/introduction',
+        //     },
+        //   ],
+        // },
         {
           to: 'blog',
           label: 'وبلاگ',
@@ -95,6 +141,10 @@ module.exports = {
           label: "تماس با من",
           position: "right",
         },
+        {
+          type: 'localeDropdown',
+          position: 'right'
+        }
       ],
     },
     footer: {
@@ -139,7 +189,7 @@ module.exports = {
         quality: 70,
         max: 1030, // max resized image's size.
         min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 4, // the max number of images generated between min and max (inclusive)
+        steps: 2, // the max number of images generated between min and max (inclusive)
       },
     ],
     ['@docusaurus/plugin-google-gtag',
