@@ -1,0 +1,68 @@
+.courseHeader {
+  text-align: center;
+  background-color: var(--ifm-background-surface-color);
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  background-image: url(/static/img/courseBG.svg),
+    linear-gradient(359.93deg, #ddeffd -44.48%, #e5f1fb 102.88%);
+  background-repeat: no-repeat;
+  background-position: left top;
+  transition: all 0.2s ease-in;
+}
+
+.headerImg {
+  height: 120px;
+}
+
+.headerImgMobile {
+  margin-bottom: 30px;
+  max-width: 140px;
+  display: none;
+}
+
+.course_logo_div {
+  text-align: right;
+  padding-right: 50px !important;
+}
+
+[class^="course__title"] {
+  font-family: "yekan";
+  text-align: left;
+  padding-top: calc(var(--ifm-paragraph-margin-bottom));
+}
+
+[class^="course__subtitle"] {
+  font-family: "yekan";
+  padding-top: calc(var(--ifm-paragraph-margin-bottom) / 2) !important;
+}
+
+@media screen and (max-width: 996px) {
+  .courseHeader {
+    padding: 0 64px;
+  }
+
+  .headerImg {
+    display: none;
+  }
+
+  .headerImgMobile {
+    display: inline;
+  }
+
+  [class^="course__title"] {
+    text-align: center;
+    padding-top: unset !important;
+  }
+
+  [class^="course__subtitle"] {
+    text-align: center;
+    padding-top: unset !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .courseHeader {
+    padding: 0 16px;
+  }
+}

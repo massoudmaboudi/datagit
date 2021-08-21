@@ -8,11 +8,13 @@
 /* var(--ifm-color-primary) */
 
 [class^="hero__title"] {
+  font-family: "yekan";
   font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
 }
 
 [class^="hero__subtitle"] {
-  font-size: 0.9rem;
+  font-family: "yekan";
+  font-size: 1rem;
   padding-bottom: 2rem;
 }
 

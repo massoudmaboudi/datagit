@@ -63,7 +63,7 @@ module.exports = {
               // to: 'docs/python/introduction',
               // activeBasePath: 'docs',
               label: 'پایتون',
-              to: 'docs/python/introduction',
+              to: 'courses/python',
               // items: [
               //   {
               //     label: 'معرفی',
@@ -80,8 +80,8 @@ module.exports = {
               // ],
             },
             {
-              to: 'docs/git/introduction',
-              label: 'گیت',
+              to: 'courses/vcs',
+              label: 'سیستم کنترل نسخه',
               // position: 'left',
               // items: [
               //   {
