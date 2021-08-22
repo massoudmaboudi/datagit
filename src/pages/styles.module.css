@@ -83,4 +83,9 @@
   [class^="button button--outline button--primary button--lg"] {
     --ifm-button-size-multiplier: 1;
   }
+
+  .custom_col__6_col__offset_1 {
+    padding-top: 1rem !important;
+    /* padding-bottom: 0 !important; */
+  }
 }
