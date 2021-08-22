@@ -80,8 +80,8 @@ module.exports = {
               // ],
             },
             {
-              to: 'courses/vcs',
-              label: 'سیستم کنترل نسخه',
+              to: 'courses/git',
+              label: 'گیت',
               // position: 'left',
               // items: [
               //   {

@@ -11,7 +11,7 @@ function Home() {
     const { siteConfig = {} } = context;
     return (
         <Layout
-            title="سیستم کنترل نسخه"
+            title="گیت"
             description="وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم."
             keywords={['مسعود معبودی', 'Massoud Maboudi', 'دیتاگیت', 'datagit', 'datagit.ir', 'مسعود معبودی رزومه', 'رزومه مسعود معبودی', 'Massoud Maboudi profile', 'دیتا گیت', 'مسعود معبودی دیتا گیت', 'آموزش پایتون', 'آموزش رایگان پایتون']}>
             <header className={styles.courseHeader}>
@@ -23,7 +23,7 @@ function Home() {
                         <div className="col col--6">
                             <img className={styles.headerImgMobile} src="/img/git/git-logo.svg" />
                             <div>
-                                <h2 className="course__title">آموزش سیستم کنترل نسخه</h2>
+                                <h2 className="course__title">آموزش گیت</h2>
                                 <p className="course__subtitle">با توجه به اینکه پایتون در حال حاضر یکی از بهترین زبان های برنامه نویسی دنیا هستش، اگر الان نخواید یاد بگیریدش، پس کِی میخواید برید سراغش؟</p>
                             </div>
                             <div className="search">

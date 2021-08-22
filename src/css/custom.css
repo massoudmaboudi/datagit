@@ -15,32 +15,32 @@
   --ifm-color-primary-light: #23404a;
   --ifm-color-primary-lighter: #25434d;
   --ifm-color-primary-lightest: #2a4b57; */
-  /* --ifm-color-primary: #0366d6;
+  --ifm-color-primary: #0366d6;
   --ifm-color-primary-dark: #035cc1;
   --ifm-color-primary-darker: #0357b6;
   --ifm-color-primary-darkest: #024796;
   --ifm-color-primary-light: #0370eb;
   --ifm-color-primary-lighter: #0375f6;
-  --ifm-color-primary-lightest: #1e86fc; */
+  --ifm-color-primary-lightest: #1e86fc;
 
-  --ifm-color-primary: #007bff;
+  /* --ifm-color-primary: #007bff;
   --ifm-color-primary-dark: #006fe6;
   --ifm-color-primary-darker: #0069d9;
   --ifm-color-primary-darkest: #0056b3;
   --ifm-color-primary-light: #1a88ff;
   --ifm-color-primary-lighter: #268fff;
-  --ifm-color-primary-lightest: #4da3ff;
+  --ifm-color-primary-lightest: #4da3ff; */
 
   --ifm-code-font-size: 95%;
 
-  --ifm-font-family-base: "Nunito Sans", "Iran Sans";
-  --ifm-heading-font-family: "Nunito Sans", "Iran Sans";
+  --ifm-font-family-base: "Iran Sans";
+  --ifm-heading-font-family: "Iran Sans";
 
   /* --ifm-footer-padding-horizontal: calc(var(--ifm-footer-padding-horizontal) / 2*3); */
 }
 
 button {
-  font-family: "Nunito Sans", "Iran Sans";
+  font-family: "Iran Sans";
 }
 
 .footer {
@@ -243,3 +243,4 @@ img {
     /* Super Modern Browsers */ url("/fonts/yekan/yekan.woff") format("woff"),
     /* Modern Browsers */ url("/fonts/yekan/yekan.ttf") format("truetype");
 }
+
