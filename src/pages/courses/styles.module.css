@@ -10,11 +10,11 @@
   background-position: left top;
   transition: all 0.2s ease-in;
 
-  height: 300px;
+  /* height: 280px; */
 }
 
 .headerImg {
-  height: 120px;
+  height: 160px;
 }
 
 .headerImgMobile {
@@ -41,8 +41,6 @@
 
 @media screen and (max-width: 996px) {
   .courseHeader {
-    padding: 0 64px;
-
     height: auto;
   }
 
@@ -66,7 +64,4 @@
 }
 
 @media screen and (max-width: 768px) {
-  .courseHeader {
-    padding: 0 16px;
-  }
 }
