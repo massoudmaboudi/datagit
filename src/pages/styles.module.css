@@ -33,9 +33,9 @@
 }
 
 [class^="button button--outline button--primary button--lg"] {
-  background: #4042e2;
-  color: white;
-  border-style: none;
+  /* background: #4042e2; */
+  /* color: white; */
+  /* border-style: none; */
   --ifm-button-size-multiplier: 1.2;
 }
 
