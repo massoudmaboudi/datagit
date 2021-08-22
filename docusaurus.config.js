@@ -152,7 +152,7 @@ module.exports = {
       // logo: {
       //   alt: 'لوگو دیتاگیت',
       //   src: 'img/logoGray.svg',
-      //   // href: 'https://datagit.ir',
+      //    href: 'https://datagit.ir',
       // },
       copyright: `Massoud Maboudi - Datagit.ir © 2018-${new Date().getFullYear()}`,
     },

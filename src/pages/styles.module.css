@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-[class^="col col--4 col--offset-1"] {
+.custom_col__4_col__offset_1 {
   margin-bottom: auto;
   margin-top: 80px;
 }
@@ -55,15 +55,17 @@
     text-align: center;
   }
 
-  [class^="row"] {
+  .custom_row {
     text-align: center;
   }
 
-  [class^="col col--4 col--offset-1"] {
+  .custom_col__4_col__offset_1 {
     margin: auto;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
 
-  [class^="col"] {
+  .custom_col__6_col__offset_1 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }

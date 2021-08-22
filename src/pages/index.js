@@ -16,8 +16,8 @@ function Home() {
       keywords={['مسعود معبودی', 'Massoud Maboudi', 'دیتاگیت', 'datagit', 'datagit.ir', 'مسعود معبودی رزومه', 'رزومه مسعود معبودی', 'Massoud Maboudi profile', 'دیتا گیت', 'مسعود معبودی دیتا گیت', 'آموزش پایتون', 'آموزش رایگان پایتون']}>
       <header className="heroBanner">
         <div className="container">
-          <div className="row">
-            <div className="col col--4 col--offset-1">
+          <div className={clsx(styles.custom_row, "row")}>
+            <div className={clsx(styles.custom_col__4_col__offset_1,"col col--4 col--offset-1")}>
               <h1 className="hero__title">{siteConfig.title}</h1>
               <p className="hero__subtitle">{siteConfig.tagline}</p>
               <div className={styles.buttons}>
@@ -31,7 +31,7 @@ function Home() {
                 </Link>
               </div>
             </div>
-            <div className="col col--6 col--offset-1">
+            <div className={clsx(styles.custom_col__6_col__offset_1,"col col--6 col--offset-1")}>
               <img className={styles.heroImg} src="img/general/programmer.svg" alt='Programmer'/>
             </div>
           </div>
