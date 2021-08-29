@@ -133,7 +133,9 @@ img {
   padding-left: unset;
   padding-right: 0;
 } */
-
+.tabs {
+  /*rtl:ignore*/
+}
 /* Avatar */
 
 /* .avatar__name {
