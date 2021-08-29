@@ -7,20 +7,9 @@
 
 /* var(--ifm-color-primary) */
 
-[class^="hero__title"] {
-  font-family: "yekan";
-  font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
-}
-
-[class^="hero__subtitle"] {
-  font-family: "yekan";
-  font-size: 1rem;
-  padding-bottom: 2rem;
-}
-
-[class^="heroBanner"] {
+.heroBanner {
   padding: 2rem 0;
-  height: calc(100vh - var(--ifm-navbar-height) - 54px);
+  height: calc(100vh - var(--ifm-navbar-height));
   position: relative;
   overflow: hidden;
   display: flex;
@@ -37,6 +26,17 @@
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
+}
+
+.hero__title {
+  font-family: "yekan";
+  font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
+}
+
+.hero__subtitle {
+  font-family: "yekan";
+  font-size: 1rem;
+  padding-bottom: 2rem;
 }
 
 .custom_col__4_col__offset_1 {
@@ -58,13 +58,13 @@
 }
 
 @media screen and (max-width: 996px) {
-  [class^="heroBanner"] {
+  .heroBanner {
     height: auto;
     padding: 0 2rem;
     background-position: top;
   }
 
-  [class^="hero__subtitle"] {
+  .hero__subtitle {
     text-align: center;
   }
 
@@ -85,11 +85,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  [class^="heroBanner"] {
+  .heroBanner {
     padding: 0 1rem;
   }
 
-  [class^="hero__subtitle"] {
+  .hero__subtitle {
     padding-bottom: 1rem;
   }
 

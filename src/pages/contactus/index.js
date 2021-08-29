@@ -75,35 +75,37 @@ function Support() {
       title="تماس با من"
       description="توی این صفحه میتونید راه های ارتباط با من رو پیدا کنید. میتونید نظرتون رو بهم بگید یا اینکه یه آموزش جدید درخواست بدید. راستی، راجع به همکاری هم میتونیم صحبت کنیم."
       keywords={['مسعود معبودی', 'Massoud Maboudi', 'دیتاگیت', 'datagit', 'datagit.ir', 'مسعود معبودی رزومه', 'رزومه مسعود معبودی', 'Massoud Maboudi profile', 'دیتا گیت', 'مسعود معبودی دیتا گیت', 'آموزش پایتون', 'آموزش رایگان پایتون']}>
-      <header className={clsx(styles.heroBanner_contactus, 'hero hero--primary')}>
-        <div className="container">
-          <h1 className="hero__title_contactus">دیتاگیت</h1>
-          <p className="hero__subtitle_contactus">توی این صفحه میتونید راه های ارتباط با من رو پیدا کنید. میتونید نظرتون رو بهم بگید یا اینکه یه آموزش جدید درخواست بدید.</p>
-          <p className="hero__subtitle_contactus">راستی، راجع به همکاری هم میتونیم صحبت کنیم.</p>
-        </div>
-      </header>
-      <main className={styles.main_features}>
-        {profilePicture && profilePicture.length > 0 && (
-          <section className={styles.profile__picture_features}>
-            <div className={"container"}>
-              {profilePicture.map((props, idx) => (
-                <ProfilePicture key={idx} {...props} />
-              ))}
-            </div>
-          </section>
-        )}
-        {socialMedia && socialMedia.length > 0 && (
-          <section className={styles.social__media_features}>
-            <div className={"container"}>
-              <div className={clsx("row", styles.center__row)}>
-                {socialMedia.map((props, idx) => (
-                  <SocialMedia key={idx} {...props} />
+      <div className={clsx(styles.custom_container)}>
+        <header className={clsx(styles.heroBanner_contactus, 'hero hero--primary')}>
+          <div className='container'>
+            <h1 className={styles.hero__title_contactus}>دیتاگیت</h1>
+            <p className={styles.hero__subtitle_contactus}>توی این صفحه میتونید راه های ارتباط با من رو پیدا کنید. میتونید نظرتون رو بهم بگید یا اینکه یه آموزش جدید درخواست بدید.</p>
+            <p className={styles.hero__subtitle_contactus}>راستی، راجع به همکاری هم میتونیم صحبت کنیم.</p>
+          </div>
+        </header>
+        <main className={styles.main_features}>
+          {profilePicture && profilePicture.length > 0 && (
+            <section className={styles.profile__picture_features}>
+              <div className={"container"}>
+                {profilePicture.map((props, idx) => (
+                  <ProfilePicture key={idx} {...props} />
                 ))}
               </div>
-            </div>
-          </section>
-        )}
-      </main>
+            </section>
+          )}
+          {socialMedia && socialMedia.length > 0 && (
+            <section className={styles.social__media_features}>
+              <div className={"container"}>
+                <div className={clsx("row", styles.center__row)}>
+                  {socialMedia.map((props, idx) => (
+                    <SocialMedia key={idx} {...props} />
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+        </main>
+      </div>
     </Layout>
   );
 }

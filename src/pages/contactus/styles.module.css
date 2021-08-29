@@ -5,21 +5,25 @@
  * and scoped locally.
  */
 
+.custom_container {
+  height: calc(100vh - var(--ifm-navbar-height)) !important;
+}
+
 .heroBanner_contactus {
   background: #0f2027;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 
   text-align: center;
-  height: fit-content !important;
-  padding-bottom: 3rem !important;
+  /* height: fit-content !important; */
 }
 
-[class^="hero__title_contactus"] {
+.hero__title_contactus {
   font-size: 2.5rem !important;
+  color: #fff;
 }
 
-[class^="hero__subtitle_contactus"] {
+.hero__subtitle_contactus {
   text-align: center !important;
   font-weight: 300;
   padding-bottom: 0 !important;
@@ -29,7 +33,7 @@
 .profile__picture_features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  margin: 2rem 0;
   width: 100%;
 }
 
@@ -60,7 +64,11 @@
 }
 
 @media screen and (max-width: 996px) {
-  [class^="heroBanner_contactus"] {
+  .custom_container {
+    height: fit-content !important;
+  }
+
+  .heroBanner_contactus {
     padding: 2rem 0 !important;
   }
 
