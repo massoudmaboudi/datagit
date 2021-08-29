@@ -121,21 +121,21 @@ img {
 
 .codeBlockTitle_eoMF {
   /*rtl:ignore*/
-  direction: rtl;
+  direction: ltr;
 }
 
 .copyButton_Ue-o {
   /*rtl:begin:ignore*/
-  right: unset !important;
-  left: calc(var(--ifm-pre-padding) / 2) !important;
+  left: unset !important;
+  right: calc(var(--ifm-pre-padding) / 2) !important;
   /*rtl:end:ignore*/
 }
 
 .tabs {
   /*rtl:begin:ignore*/
-  direction: rtl;
-  padding-left: unset;
-  padding-right: 0;
+  direction: ltr;
+  padding-left: 0;
+  padding-right: unset;
   /*rtl:end:ignore*/
 }
 
