@@ -37,7 +37,7 @@
 }
 
 .card_item_container {
-  padding: 40px calc(var(--ifm-spacing-horizontal) * 3);
+  padding: 40px calc(var(--ifm-spacing-horizontal) * 10);
 }
 
 .custom_col_course {
@@ -108,6 +108,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .card_item_container {
+    padding: 40px calc(var(--ifm-spacing-horizontal) * 3);
+  }
+
   .custom_card__image {
     width: 70%;
   }
