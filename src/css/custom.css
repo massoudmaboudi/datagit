@@ -114,13 +114,12 @@ img {
 /* Navbar */
 
 .dropdown > .navbar__link:after {
-  /* margin-top: 20; */
   border-radius: var(--ifm-global-radius);
 }
 
 /* CodeBlock */
 
-.codeBlockTitle_eoMF {
+/* .codeBlockTitle_eoMF {
   direction: rtl;
 }
 
@@ -133,14 +132,14 @@ img {
   direction: rtl;
   padding-left: unset;
   padding-right: 0;
-}
+} */
 
 /* Avatar */
 
-.avatar__name {
+/* .avatar__name {
   font-family: "Iran Sans";
   font-weight: 600;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .footer {
