@@ -1,5 +1,4 @@
 .courseHeader {
-  text-align: center;
   background-color: var(--ifm-background-surface-color);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -9,8 +8,6 @@
   background-repeat: no-repeat;
   background-position: left top;
   transition: all 0.2s ease-in;
-
-  /* height: 280px; */
 }
 
 .headerImg {
@@ -18,25 +15,58 @@
 }
 
 .headerImgMobile {
-  margin-bottom: 30px;
-  max-width: 140px;
+  margin-bottom: 32px;
+  max-width: 128px;
   display: none;
 }
 
 .course_logo_div {
   text-align: right;
-  padding-right: 50px !important;
+  padding-right: 48px !important;
 }
 
-[class^="course__title"] {
+.course__title {
   font-family: "Yekan";
   text-align: left;
   padding-top: calc(var(--ifm-paragraph-margin-bottom));
 }
 
-[class^="course__subtitle"] {
+.course__subtitle {
   font-family: "Yekan";
   padding-top: calc(var(--ifm-paragraph-margin-bottom) / 2) !important;
+}
+
+.card_item_container {
+  padding: 40px calc(var(--ifm-spacing-horizontal) * 3);
+}
+
+.custom_col_course {
+  /* margin: 1rem 2rem !important ; */
+  /* background-color: white; */
+  /* padding-top: var(--ifm-spacing-vertical) !important; */
+  /* padding-bottom: var(--ifm-spacing-vertical) !important; */
+  /* width: 33% !important; */
+  /* margin-left: 20px !important;
+  margin-right: 20px !important; */
+  /* text-align: center !important; */
+}
+[class^="card"] {
+}
+
+.custom_card {
+  border-top: 2px solid var(--ifm-color-primary-lightest);
+  border-radius: 5px;
+  padding-top: 40px;
+  height: 600px;
+}
+
+.custom_card__image {
+  width: 60%;
+  align-self: center;
+}
+
+.custom_card__footer {
+  text-align: right;
 }
 
 @media screen and (max-width: 996px) {
@@ -52,14 +82,28 @@
     display: inline;
   }
 
-  [class^="course__title"] {
+  .course__title {
     text-align: center;
     padding-top: unset !important;
   }
 
-  [class^="course__subtitle"] {
+  .course__subtitle {
     text-align: center;
     padding-top: unset !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .custom_card {
+    height: auto;
+    padding-top: 20px;
+    margin-top: calc(var(--ifm-spacing-vertical) * 2) !important;
+    margin-bottom: calc(var(--ifm-spacing-vertical) * 2) !important;
+  }
+
+  .custom_card__image {
+    width: 40%;
+    align-self: center;
   }
 }
 
