@@ -15,8 +15,6 @@
   display: flex;
   align-items: center;
 
-  /* width: 100vw; */
-  /* margin: 0; */
   background-image: linear-gradient(
       -40deg,
       rgba(255, 255, 255, 0.8) 100%,
@@ -29,12 +27,12 @@
 }
 
 .hero__title {
-  font-family: "yekan";
+  font-family: "Yekan";
   font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
 }
 
 .hero__subtitle {
-  font-family: "yekan";
+  font-family: "Yekan";
   font-size: 1rem;
   padding-bottom: 2rem;
 }
@@ -44,17 +42,8 @@
   margin-top: 80px;
 }
 
-[class^="button button--outline button--primary button--lg"] {
-  /* background: #4042e2; */
-  /* color: white; */
-  /* border-style: none; */
+.getStarted {
   --ifm-button-size-multiplier: 1.2;
-}
-
-[class^="button button--outline button--primary button--lg"]:hover,
-[class^="button button--outline button--primary button--lg"]:active {
-  background: var(--ifm-color-primary-darkest);
-  border-color: var(--ifm-color-primary-darkest);
 }
 
 @media screen and (max-width: 996px) {
@@ -93,12 +82,11 @@
     padding-bottom: 1rem;
   }
 
-  [class^="button button--outline button--primary button--lg"] {
+  .getStarted {
     --ifm-button-size-multiplier: 1;
   }
 
   .custom_col__6_col__offset_1 {
-    padding-top: 1rem !important;
-    /* padding-bottom: 0 !important; */
+    padding-top: 2rem !important;
   }
 }

@@ -38,8 +38,6 @@
 
   --ifm-font-family-base: "Iran Sans";
   --ifm-heading-font-family: "Iran Sans";
-
-  /* --ifm-h1-font-size: calc(var(--ifm-h1-font-size) * 2) !important; */
 }
 
 button {
@@ -51,34 +49,9 @@ button {
   color: #a4a4a4;
   letter-spacing: 0.05em;
   font-size: 0.8rem;
-  /* padding: calc(var(--ifm-footer-padding-vertical) * 1 / 2); */
   padding: calc(var(--ifm-footer-padding-vertical) * 1 / 2)
     var(--ifm-footer-padding-horizontal);
-  /* box-shadow: 0 -1px 2px 0px rgba(0, 0, 0, 0.1); */
   border-top: 1px solid var(--ifm-toc-border-color);
-}
-
-/* html,
-body {
-  font-family: "Nunito Sans", "Iran Sans";
-  font-weight: 400;
-  color: var(--ifm-color-primary);
-} */
-
-/* h1 {
-  font-size: 2.4rem !important;
-} */
-
-/* h2 {
-  font-size: 1.9rem !important;
-} */
-
-/* h3 {
-  font-size: 1.3rem !important;
-} */
-
-p {
-  /* text-align: justify; */
 }
 
 img {
@@ -90,12 +63,6 @@ img {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-} */
-
-/* Footer */
-
-/* .footer__logo {
-  max-width: 2rem;
 } */
 
 /* hash-link */
@@ -138,13 +105,6 @@ img {
   padding-right: unset;
   /*rtl:end:ignore*/
 }
-
-/* Avatar */
-
-/* .avatar__name {
-  font-family: "Iran Sans";
-  font-weight: 600;
-} */
 
 @media screen and (max-width: 768px) {
   .footer {
