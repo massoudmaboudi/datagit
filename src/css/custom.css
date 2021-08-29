@@ -119,23 +119,16 @@ img {
 }
 
 /* CodeBlock */
-/* 
-/* .codeBlockContainer_K1bP {
-  direction: rtl;
-} 
 
-.codeBlockLines_39YC {
-  float: right !important;
+.codeBlockTitle_eoMF {
+  direction: rtl;
 }
 
 .copyButton_Ue-o {
   right: unset !important;
   left: calc(var(--ifm-pre-padding) / 2) !important;
+}
 
-  font-family: "Nunito Sans", "Iran Sans";
-  font-size: 0.6rem;
-} 
-*/
 .tabs {
   direction: rtl;
   padding-left: unset;
