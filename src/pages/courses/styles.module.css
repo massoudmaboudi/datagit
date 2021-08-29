@@ -102,10 +102,13 @@
   }
 
   .custom_card__image {
-    width: 60%;
+    width: 40%;
     align-self: center;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .custom_card__image {
+    width: 70%;
+  }
 }
