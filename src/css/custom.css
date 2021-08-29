@@ -33,19 +33,11 @@
   --ifm-color-primary-lightest: #4da3ff; */
 
   --ifm-code-font-size: 95%;
-  --ifm-font-size-base: 16px;
   --ifm-color-content: #525f7f;
   --ifm-heading-color: #2d294f;
 
-  --ifm-font-family-base: "Iran Sans", "Inter", "-apple-system",
-    "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Arial", "sans-serif",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-  --ifm-heading-font-family: "Iran Sans", "Inter", "-apple-system",
-    "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Arial", "sans-serif",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-  /* --ifm-footer-padding-horizontal: calc(var(--ifm-footer-padding-horizontal) / 2*3); */
+  --ifm-font-family-base: "Iran Sans";
+  --ifm-heading-font-family: "Iran Sans";
 }
 
 button {
@@ -84,7 +76,7 @@ body {
 } */
 
 p {
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 img {
@@ -126,7 +118,7 @@ img {
 
 /* CodeBlock */
 
-.codeBlockContainer_K1bP {
+/* .codeBlockContainer_K1bP {
   direction: rtl;
 }
 
@@ -140,7 +132,7 @@ img {
 
   font-family: "Nunito Sans", "Iran Sans";
   font-size: 0.6rem;
-}
+} */
 
 .tabs {
   direction: rtl;
