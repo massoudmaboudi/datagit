@@ -38,6 +38,8 @@
 
   --ifm-font-family-base: "Iran Sans";
   --ifm-heading-font-family: "Iran Sans";
+
+  /* --ifm-h1-font-size: calc(var(--ifm-h1-font-size) * 2) !important; */
 }
 
 button {
@@ -117,10 +119,10 @@ img {
 }
 
 /* CodeBlock */
-
+/* 
 /* .codeBlockContainer_K1bP {
   direction: rtl;
-}
+} 
 
 .codeBlockLines_39YC {
   float: right !important;
@@ -132,8 +134,8 @@ img {
 
   font-family: "Nunito Sans", "Iran Sans";
   font-size: 0.6rem;
-} */
-
+} 
+*/
 .tabs {
   direction: rtl;
   padding-left: unset;
