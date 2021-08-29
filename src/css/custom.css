@@ -119,23 +119,26 @@ img {
 
 /* CodeBlock */
 
-/* .codeBlockTitle_eoMF {
+.codeBlockTitle_eoMF {
+  /*rtl:ignore*/
   direction: rtl;
 }
 
 .copyButton_Ue-o {
+  /*rtl:begin:ignore*/
   right: unset !important;
   left: calc(var(--ifm-pre-padding) / 2) !important;
+  /*rtl:end:ignore*/
 }
 
 .tabs {
+  /*rtl:begin:ignore*/
   direction: rtl;
   padding-left: unset;
   padding-right: 0;
-} */
-.tabs {
-  /*rtl:ignore*/
+  /*rtl:end:ignore*/
 }
+
 /* Avatar */
 
 /* .avatar__name {
