@@ -32,7 +32,7 @@ function Home() {
               </div>
             </div>
             <div className={clsx(styles.custom_col__6_col__offset_1, "col col--6 col--offset-1")}>
-              <img className={styles.heroImg} src="img/general/programmer.svg" alt='Programmer' />
+              <img className={styles.heroImg} src="img/general/undraw_working_from_anywhere_ub67.svg" alt='Programmer' />
             </div>
           </div>
         </div>
