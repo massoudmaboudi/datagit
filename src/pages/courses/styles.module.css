@@ -25,6 +25,10 @@
   padding-right: 48px !important;
 }
 
+.course_desc_div {
+  text-align: left;
+}
+
 .course__title {
   font-family: "Yekan";
   text-align: left;
@@ -41,32 +45,41 @@
 }
 
 .custom_col_course {
-  /* margin: 1rem 2rem !important ; */
-  /* background-color: white; */
-  /* padding-top: var(--ifm-spacing-vertical) !important; */
-  /* padding-bottom: var(--ifm-spacing-vertical) !important; */
-  /* width: 33% !important; */
-  /* margin-left: 20px !important;
-  margin-right: 20px !important; */
-  /* text-align: center !important; */
-}
-[class^="card"] {
 }
 
 .custom_card {
   border-top: 2px solid var(--ifm-color-primary-lightest);
   border-radius: 5px;
-  padding-top: 40px;
-  height: 600px;
+  padding-top: 20px;
+  height: 520px;
+
+  -webkit-transition: -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease,
+    -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.custom_card:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+
+  -webkit-transition: -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .custom_card__image {
-  width: 60%;
+  width: 50%;
   align-self: center;
 }
 
 .custom_card__footer {
   text-align: right;
+}
+
+.custom_card {
+  white-space: pre-wrap;
 }
 
 @media screen and (max-width: 996px) {
@@ -80,6 +93,10 @@
 
   .headerImgMobile {
     display: inline;
+  }
+
+  .course_desc_div {
+    text-align: center;
   }
 
   .course__title {

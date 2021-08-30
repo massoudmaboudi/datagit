@@ -10,20 +10,20 @@ import styles from '../styles.module.css';
 const courseItems = [
     {
         title: 'آموزش ها',
-        href: 'https://t.me/massoudmaboudi',
-        desc: 'Telegram IDTelegram IDTelegram IDTelegram IDTelegram IDTelegram IDTelegram IDTelegram ID',
+        href: 'docs/',
+        desc: 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن.\n\nآموزش های مقدماتی دیتاگیت به شما کمک میکنه تا شروع راحتی داشته باشید و آموزش های پیشرفته هم مفاهیم و کتابخانه های مختلف رو به شما معرفی میکنه.',
         img: '/img/general/undraw_Through_the_desert_re_1q2x.svg'
     },
     {
         title: 'مثال ها',
-        href: 'http://wa.me/905380471631',
-        desc: 'WhatsApp ID',
+        href: 'docs/',
+        desc: 'بهترین راه برای یادگیری پایتون، تمرین و کدنویسی هست.\n\nتوی این قسمت میتونید مثال های مختلفی رو پیدا کنید که مفاهیم مختلف پایتون رو به صورت پروژه توضیح میدن. پیشنهاد میکنم که این مثال ها ببینید ولی سعی کنید خودتون کدنویسی کنید.',
         img: '/img/general/undraw_product_iteration_kjok.svg'
     },
     {
         title: 'مرجع',
-        href: 'mailto:massoud.maboudi@gmail.com',
-        desc: 'Email ID',
+        href: 'docs/',
+        desc: 'گاهی اوقات باید لبه دانشمون رو با مرور مفاهیم تیز کنیم.\n\nاین قسمت منبع خوبی برای مرور توابع اصلی پایتون هست و کاربرد هر مورد رو میتونید با مثال بررسی کنید.',
         img: '/img/general/undraw_camping_noc8.svg'
     }
 ]
@@ -41,10 +41,14 @@ function CourseItems({ title, desc, href, img }) {
                 </div>
                 <div class="card__body">
                     <h3>{title}</h3>
-                    <small>{desc}</small>
+                    <small className={styles.custom_small}>{desc}</small>
                 </div>
                 <div className={clsx("card__footer", styles.custom_card__footer)}>
-                    <button class="button button--primary button--outline">ادامه</button>
+                    <Link
+                        class="button button--primary button--outline"
+                        to={useBaseUrl(href)}>
+                        ادامه
+                    </Link>
                 </div>
             </div>
         </div >
@@ -67,12 +71,11 @@ function CourseInner() {
                             <img className={styles.headerImg} src="/img/python/python-logo.svg" />
 
                         </div>
-                        <div className="col col--6">
+                        <div className={clsx(styles.course_desc_div, "col col--6")}>
                             <img className={styles.headerImgMobile} src="/img/python/python-logo.svg" />
                             <div>
                                 <h2 className={styles.course__title}>آموزش زبان برنامه نویسی پایتون</h2>
-                                <p className={styles.course__subtitle}>با توجه به اینکه پایتون در حال حاضر یکی از بهترین زبان های برنامه نویسی دنیا هستش، اگر الان نخواید یاد بگیریدش، پس کِی میخواید برید سراغش؟</p>
-                                <p className={styles.course__subtitle}>آموزش ها و مثال های کاربردی دیتاگیت به شما کمک میکنه تا قدم به قدم خودتون رو توی پایتون قوی تر کنید.  </p>
+                                <p className={styles.course__subtitle}>پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.<br /><br />خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هست.</p>
                                 {/* <div className="search"> */}
                                 {/* <input
                                     className={classnames("shadow--lw", styles.cookbookSearch)}
