@@ -6,6 +6,7 @@
   background-image: url(/static/img/courseBG.svg),
     linear-gradient(359.93deg, #ddeffd -44.48%, #e5f1fb 102.88%);
   background-repeat: no-repeat;
+  /*rtl:ignore*/
   background-position: left top;
   transition: all 0.2s ease-in;
 }

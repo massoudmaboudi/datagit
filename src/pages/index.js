@@ -5,10 +5,12 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import Translate, { translate } from '@docusaurus/Translate';
 
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+
   return (
     <Layout
       title="صفحه اصلی"
@@ -18,8 +20,22 @@ function Home() {
         <div className="container">
           <div className={clsx(styles.custom_row, "row")}>
             <div className={clsx(styles.custom_col__4_col__offset_1, "col col--4 col--offset-1")}>
-              <h1 className={styles.hero__title}>{siteConfig.title}</h1>
-              <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
+              <h1 className={styles.hero__title}>
+                <Translate
+                  id="pages.main.datagit"
+                  description="The name of the project"
+                >
+                  دیتاگیت
+                </Translate>
+              </h1>
+              <p className={styles.hero__subtitle}>
+                <Translate
+                  id="pages.main.tagline"
+                  description="The tagline of the project"
+                >
+                  برای برنامه نویس شدن باید دست به کد شد!
+                </Translate>
+              </p>
               <div className={styles.buttons}>
                 <Link
                   className={clsx(
@@ -27,7 +43,12 @@ function Home() {
                     styles.getStarted,
                   )}
                   to={useBaseUrl('docs/')}>
-                  از کجا شروع کنم؟
+                  <Translate
+                    id="pages.main.whereToStart"
+                    description="The where to start button"
+                  >
+                    از کجا شروع کنم؟
+                  </Translate>
                 </Link>
               </div>
             </div>

@@ -27,7 +27,7 @@ button {
 .footer {
   background: var(--ifm-navbar-background-color);
   color: #a4a4a4;
-  letter-spacing: 0.05em;
+  font-family: "IRANSansX";
   font-size: 0.8rem;
   padding: calc(var(--ifm-footer-padding-vertical) * 1 / 2)
     var(--ifm-footer-padding-horizontal);
@@ -91,4 +91,15 @@ img {
       format("embedded-opentype"),
     /* Super Modern Browsers */ url("/fonts/yekan/yekan.woff") format("woff"),
     /* Modern Browsers */ url("/fonts/yekan/yekan.ttf") format("truetype");
+  unicode-range: U+0600-06FF;
+}
+
+/* IRANSansX Web*/
+@font-face {
+  font-family: "IRANSansX";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/IRANSansX/woff/IRANSansX-Regular.woff") format("woff"),
+    url("/fonts/IRANSansX/woff2/IRANSansX-Regular.woff2") format("woff2");
+  /* unicode-range: U+0600-06FF; */
 }

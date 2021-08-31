@@ -154,7 +154,7 @@ module.exports = {
       //   src: 'img/logoGray.svg',
       //    href: 'https://datagit.ir',
       // },
-      copyright: `Massoud Maboudi - Datagit.ir © 2018-${new Date().getFullYear()}`,
+      copyright: `مسعود معبودی - دیتاگیت © 2018-${new Date().getFullYear()}`,
     },
 
     // CodeBlock Theme,

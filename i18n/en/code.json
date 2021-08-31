@@ -158,5 +158,29 @@
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "On this page",
     "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "pages.main.datagit": {
+    "message": "Datagit",
+    "description": "The name of the project"
+  },
+  "pages.main.tagline": {
+    "message": "To become a programmer, you should get your hands dirty with code!",
+    "description": "The tagline of the project"
+  },
+  "pages.main.whereToStart": {
+    "message": "Get Started",
+    "description": "The where to start button"
   }
 }
