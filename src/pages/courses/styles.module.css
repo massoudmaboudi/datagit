@@ -30,13 +30,11 @@
 }
 
 .course__title {
-  font-family: "Yekan";
   text-align: left;
   padding-top: calc(var(--ifm-paragraph-margin-bottom));
 }
 
 .course__subtitle {
-  font-family: "Yekan";
   padding-top: calc(var(--ifm-paragraph-margin-bottom) / 2) !important;
 }
 

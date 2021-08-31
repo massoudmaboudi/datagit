@@ -27,13 +27,10 @@
 }
 
 .hero__title {
-  font-family: "Yekan";
   font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
 }
 
 .hero__subtitle {
-  font-family: "Yekan";
-  font-size: 1rem;
   padding-bottom: 2rem;
 }
 
