@@ -21,7 +21,6 @@
     ),
     url("/img/hero.svg");
   background-repeat: no-repeat;
-  /*rtl:ignore*/
   background-position: left center;
   background-size: cover;
 }
