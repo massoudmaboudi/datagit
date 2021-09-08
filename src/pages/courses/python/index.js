@@ -6,38 +6,41 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from '../styles.module.css';
 
+import FeatureCard from '../../../components/Feature/FeatureCard';
+
 const sectionsItems = [
     {
         title: 'آموزش ها',
-        href: 'docs/',
-        desc: 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن.',
-        img: '/img/general/courseway.svg'
+        description: 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن.',
+        path: './python/tutorials',
+        cover: '/img/general/courseway.svg'
     },
     {
         title: 'مثال ها',
-        href: 'docs/',
-        desc: 'بهترین راه برای یادگیری، تمرین و کدنویسی هست.',
-        img: '/img/general/console.svg'
+        description: 'بهترین راه برای یادگیری، تمرین و کدنویسی هست.',
+        path: 'docs/',
+        cover: '/img/general/console.svg'
     },
     {
         title: 'مرجع',
-        href: 'docs/',
-        desc: 'گاهی اوقات باید لبه‌ی دانشمون رو با مرور مفاهیم تیز کنیم.',
-        img: '/img/general/steps.svg'
+        description: 'گاهی اوقات باید لبه‌ی دانشمون رو با مرور مفاهیم تیز کنیم.',
+        path: 'docs/',
+        cover: '/img/general/steps.svg'
     }
 ]
 
-function SectionsItems({ title, desc, href, img }) {
+function FeatureCards({ sections }) {
     return (
-        <div className={clsx("col col--4", "item shadow--lw", styles.course_feature_card)} >
-            <a className={styles.course_feature_link} href={href}>
-                <div>
-                    <img className={styles.course_svg_icon} src={img} alt={title} />
-                </div>
-                <h3>{title}</h3>
-                <small>{desc}</small>
-            </a>
-        </div>
+        <section className="container">
+            <div className="row">
+                {sections.map((section) => (
+                    <FeatureCard
+                        key={section.title} // Title should be unique
+                        course={section}
+                    />
+                ))}
+            </div>
+        </section>
     );
 }
 
@@ -60,7 +63,7 @@ function SectionsInner() {
                         <div className={clsx(styles.sections_desc_div, "col col--6")}>
                             <img className={styles.headerImgMobile} src="/img/python/python-logo.svg" />
                             <div>
-                                <h2 className={styles.sections__title}>آموزش زبان برنامه نویسی پایتون</h2>
+                                <h1 className={styles.sections__title}>پایتون</h1>
                                 <p className={styles.sections__subtitle}>پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.<br /><br />خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هست.</p>
                                 {/* <div className="search"> */}
                                 {/* <input
@@ -74,16 +77,8 @@ function SectionsInner() {
                     </div>
                 </div>
             </header >
-            <main>
-                <div className={styles.course_features}>
-                    <div class="container">
-                        <div className={clsx("row", styles.course_features_row)}>
-                            {sectionsItems.map((props, idx) => (
-                                <SectionsItems key={idx} {...props} />
-                            ))}
-                        </div>
-                    </div>
-                </div>
+            <main className="container margin-vert--lg">
+                <FeatureCards sections={sectionsItems} />
             </main>
         </Layout >
     );

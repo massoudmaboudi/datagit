@@ -1,0 +1,35 @@
+.tutorials_custom_hero {
+  text-align: center;
+  background-image: linear-gradient(
+      40deg,
+      rgba(255, 255, 255, 0.6) 100%,
+      rgba(0, 132, 255, 0.1)
+    ),
+    url("/img/hero_2.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.custom_filter_col {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+
+  text-align: left;
+}
+
+@media screen and (max-width: 996px) {
+  .custom_filter_col {
+    --ifm-col-width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom_filter_col {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+
+    --ifm-col-width: 100% !important;
+  }
+}

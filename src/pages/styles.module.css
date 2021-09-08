@@ -19,7 +19,7 @@
       rgba(255, 255, 255, 0.8) 100%,
       rgba(0, 132, 255, 0.1)
     ),
-    url("/img/hero.svg");
+    url("/img/hero_1.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;

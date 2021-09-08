@@ -10,7 +10,7 @@ module.exports = {
       items: [
         {
           type: 'ref',
-          id: 'python/introduction'
+          id: 'courses/python/tutorials/introduction'
         },
         {
           type: "category",
@@ -18,7 +18,7 @@ module.exports = {
           items: [
             {
               type: 'ref',
-              id: 'python/beginner/introduction'
+              id: 'courses/python/tutorials/beginner/introduction'
             },
             {
               type: "category",
@@ -26,15 +26,15 @@ module.exports = {
               items: [
                 {
                   type: 'ref',
-                  id: 'python/beginner/km_zero/python_installation'
+                  id: 'courses/python/tutorials/beginner/km_zero/python_installation'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/km_zero/anaconda_installation'
+                  id: 'courses/python/tutorials/beginner/km_zero/anaconda_installation'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/km_zero/jupyter_installation'
+                  id: 'courses/python/tutorials/beginner/km_zero/jupyter_installation'
                 }
               ],
             },
@@ -44,11 +44,11 @@ module.exports = {
               items: [
                 {
                   type: 'ref',
-                  id: 'python/beginner/introduction/variables'
+                  id: 'courses/python/tutorials/beginner/introduction/variables'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/introduction/local_global_variables'
+                  id: 'courses/python/tutorials/beginner/introduction/local_global_variables'
                 }
               ],
             },
@@ -58,11 +58,11 @@ module.exports = {
               items: [
                 {
                   type: 'ref',
-                  id: 'python/beginner/functions/function'
+                  id: 'courses/python/tutorials/beginner/functions/function'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/functions/useful_functions'
+                  id: 'courses/python/tutorials/beginner/functions/useful_functions'
                 }
               ],
             },
@@ -72,23 +72,23 @@ module.exports = {
               items: [
                 {
                   type: 'ref',
-                  id: 'python/beginner/data_types/string'
+                  id: 'courses/python/tutorials/beginner/data_types/string'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/data_types/list'
+                  id: 'courses/python/tutorials/beginner/data_types/list'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/data_types/tuple'
+                  id: 'courses/python/tutorials/beginner/data_types/tuple'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/data_types/set'
+                  id: 'courses/python/tutorials/beginner/data_types/set'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/data_types/dictionary'
+                  id: 'courses/python/tutorials/beginner/data_types/dictionary'
                 }
               ],
             },
@@ -98,17 +98,17 @@ module.exports = {
               items: [
                 {
                   type: 'ref',
-                  id: 'python/beginner/flow_control/for_while'
+                  id: 'courses/python/tutorials/beginner/flow_control/for_while'
                 },
                 {
                   type: 'ref',
-                  id: 'python/beginner/flow_control/if_else'
+                  id: 'courses/python/tutorials/beginner/flow_control/if_else'
                 }
               ],
             },
             {
               type: 'ref',
-              id: 'python/beginner/indent'
+              id: 'courses/python/tutorials/beginner/indent'
             }
           ],
         },
@@ -120,7 +120,7 @@ module.exports = {
       items: [
         {
           type: 'ref',
-          id: 'git/introduction'
+          id: 'courses/git/introduction'
         },
         {
           type: "category",
@@ -128,7 +128,7 @@ module.exports = {
           items: [
             {
               type: 'ref',
-              id: "git/beginner/introduction"
+              id: "courses/git/tutorials/beginner/introduction"
             },
             {
               type: "category",
@@ -136,7 +136,7 @@ module.exports = {
               items: [
                 {
                   type: 'ref',
-                  id: "git/beginner/km_zero/git_installation"
+                  id: "courses/git/tutorials/beginner/km_zero/git_installation"
                 }
               ],
             }
@@ -164,59 +164,59 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'python/introduction'
+      id: 'courses/python/tutorials/introduction'
     },
     {
       type: "category",
       label: "آموزش مقدماتی",
       collapsed: false,
       items: [
-        "python/beginner/introduction",
+        "courses/python/tutorials/beginner/introduction",
         {
           type: "category",
           label: "کیلومترِ صفر",
           items: [
-            "python/beginner/km_zero/python_installation",
-            "python/beginner/km_zero/anaconda_installation",
-            "python/beginner/km_zero/jupyter_installation"
+            "courses/python/tutorials/beginner/km_zero/python_installation",
+            "courses/python/tutorials/beginner/km_zero/anaconda_installation",
+            "courses/python/tutorials/beginner/km_zero/jupyter_installation"
           ],
         },
         {
           type: "category",
           label: "مقدمه",
           items: [
-            "python/beginner/introduction/variables",
-            "python/beginner/introduction/local_global_variables"
+            "courses/python/tutorials/beginner/introduction/variables",
+            "courses/python/tutorials/beginner/introduction/local_global_variables"
           ],
         },
         {
           type: "category",
           label: "توابع",
           items: [
-            "python/beginner/functions/function",
-            "python/beginner/functions/useful_functions"
+            "courses/python/tutorials/beginner/functions/function",
+            "courses/python/tutorials/beginner/functions/useful_functions"
           ],
         },
         {
           type: "category",
           label: "انواع داده",
           items: [
-            "python/beginner/data_types/string",
-            "python/beginner/data_types/list",
-            "python/beginner/data_types/tuple",
-            "python/beginner/data_types/set",
-            "python/beginner/data_types/dictionary",
+            "courses/python/tutorials/beginner/data_types/string",
+            "courses/python/tutorials/beginner/data_types/list",
+            "courses/python/tutorials/beginner/data_types/tuple",
+            "courses/python/tutorials/beginner/data_types/set",
+            "courses/python/tutorials/beginner/data_types/dictionary",
           ],
         },
         {
           type: "category",
           label: "توابع شرطی و حلقه های تکرار",
           items: [
-            "python/beginner/flow_control/for_while",
-            "python/beginner/flow_control/if_else"
+            "courses/python/tutorials/beginner/flow_control/for_while",
+            "courses/python/tutorials/beginner/flow_control/if_else"
           ],
         },
-        "python/beginner/indent",
+        "courses/python/tutorials/beginner/indent",
       ],
     },
   ],
@@ -227,19 +227,19 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'git/introduction'
+      id: 'courses/git/introduction'
     },
     {
       type: "category",
       label: "آموزش مقدماتی",
       collapsed: false,
       items: [
-        "git/beginner/introduction",
+        "courses/git/tutorials/beginner/introduction",
         {
           type: "category",
           label: "کیلومترِ صفر",
           items: [
-            "git/beginner/km_zero/git_installation"
+            "courses/git/tutorials/beginner/km_zero/git_installation"
           ],
         }
       ]
