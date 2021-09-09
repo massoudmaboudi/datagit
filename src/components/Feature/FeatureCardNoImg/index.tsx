@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 const FeatureCard = memo(function ({ course }: { course: any }) {
   return (
-    <div key={course.title} className="col col--4 margin-bottom--lg">
+    <div key={course.title} className={clsx("col col--4 margin-bottom--lg", styles.custom_card_col)}>
       <a className={styles.course_feature_link} href={course.path}>
         <div className={clsx('card', styles.featureCard)}>
           {/* <div className={clsx('card__image', styles.featureCardImage)}>

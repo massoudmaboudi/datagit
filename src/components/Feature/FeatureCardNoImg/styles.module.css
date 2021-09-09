@@ -1,4 +1,7 @@
 .featureCard {
+  border-top: 2px solid #e3f2ff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   height: 100%;
 
   transition: all 0.25s ease-in-out;
@@ -39,4 +42,16 @@
 .course_feature_link:hover {
   color: inherit;
   text-decoration: none;
+}
+
+@media screen and (max-width: 996px) {
+  .custom_card_col {
+    --ifm-col-width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom_card_col {
+    --ifm-col-width: 100% !important;
+  }
 }

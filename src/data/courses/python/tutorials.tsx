@@ -1,7 +1,9 @@
 
 
 import React from 'react';
-import { difference, sortBy } from '../../utils/jsUtils';
+import { difference, sortBy } from '../../../utils/jsUtils';
+
+const baseURL = '../../../';
 
 export type Tag = {
     label: string;
@@ -14,7 +16,8 @@ export type TagType =
     | 'beginner'
     | 'advance'
     | 'matplotlib'
-    | 'pandas';
+    | 'pandas'
+    | 'numpy';
 
 export type Course = {
     title: string;
@@ -29,32 +32,35 @@ export type Course = {
 export const Tags: Record<TagType, Tag> = {
     // DO NOT USE THIS TAG: I choose courses to add to favorites
     favorite: {
-        label: 'Favorite',
+        label: 'ویژه',
         description:
             'Our favorite courses that you must absolutely check-out!',
         // icon: <></>,
     },
     beginner: {
-        label: 'Beginner',
+        label: 'مقدماتی',
         description:
             'Our favorite courses that you must absolutely check-out!',
         // icon: <></>,
     },
-
     advance: {
-        label: 'Advance',
+        label: 'پیشرفته',
         description: 'Open-Source courses can be useful for inspiration!',
         // icon: <></>,
     },
-
     matplotlib: {
         label: 'Matplotlib',
         description: 'courses associated to a commercial product!',
         // icon: <></>,
     },
-
     pandas: {
-        label: 'Pandasssss',
+        label: 'Pandas',
+        description:
+            'Beautiful courses, polished and standing out from the initial template!',
+        // icon: <></>,
+    },
+    numpy: {
+        label: 'Numpy',
         description:
             'Beautiful courses, polished and standing out from the initial template!',
         // icon: <></>,
@@ -65,11 +71,39 @@ export const Tags: Record<TagType, Tag> = {
 // prettier-ignore
 const Courses: Course[] = [
     {
-        title: 'Aide Jeune',
-        description: 'French Discord server that helps young people who have been bullied or feel bad about themselves',
+        title: 'آموزش مقدماتی پایتون',
+        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: 'https://aidejeune.fr',
-        tags: ['beginner'],
+        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+        tags: ['beginner', 'favorite'],
+    },
+    {
+        title: 'آموزش مقدماتی Matplotlib',
+        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // preview: require('../../../static/img/general/massoudmaboudi.png'),
+        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+        tags: ['matplotlib'],
+    },
+    {
+        title: 'آموزش مقدماتی Pandas',
+        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // preview: require('../../../static/img/general/massoudmaboudi.png'),
+        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+        tags: ['pandas'],
+    },
+    {
+        title: 'آموزش شی گرایی در پایتون',
+        description: 'دوره‌ای متفارنامه‌نویسی به زبان پای برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // preview: require('../../../static/img/general/massoudmaboudi.png'),
+        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+        tags: ['advance'],
+    },
+    {
+        title: 'آموزش مقدماتی Numpy',
+        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // preview: require('../../../static/img/general/massoudmaboudi.png'),
+        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+        tags: ['numpy'],
     },
 
     /*
@@ -97,7 +131,7 @@ function ensureCourseValid(course: Course) {
         const validKeys = [
             'title',
             'description',
-            'preview',
+            // 'preview',
             'path',
             'tags',
         ];
@@ -125,13 +159,13 @@ function ensureCourseValid(course: Course) {
         if (!course.path) {
             throw new Error('Course path is missing');
         }
-        const isHttpUrl =
-            course.path.startsWith('http://') || course.path.startsWith('https://');
-        if (!isHttpUrl) {
-            throw new Error(
-                `Course path does not look like a valid url: ${course.path}`,
-            );
-        }
+        // const isHttpUrl =
+        //     course.path.startsWith('http://') || course.path.startsWith('https://');
+        // if (!isHttpUrl) {
+        //     throw new Error(
+        //         `Course path does not look like a valid url: ${course.path}`,
+        //     );
+        // }
     }
 
     function checkTags() {
@@ -164,5 +198,5 @@ function ensureCourseValid(course: Course) {
         );
     }
 }
-
+console.log(require('@site/docs/courses/python/tutorials/beginner/introduction.md').default)
 Courses.forEach(ensureCourseValid);
