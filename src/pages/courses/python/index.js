@@ -34,10 +34,12 @@ function FeatureCards({ sections }) {
         <section className="container">
             <div className="row">
                 {sections.map((section) => (
-                    <FeatureCard
-                        key={section.title} // Title should be unique
-                        course={section}
-                    />
+                    <div key={section.title} className={clsx("col col--4 margin-bottom--lg", styles.custom_card_col)}>
+                        <FeatureCard
+                            key={section.title} // Title should be unique
+                            course={section}
+                        />
+                    </div>
                 ))}
             </div>
         </section>

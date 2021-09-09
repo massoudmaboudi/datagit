@@ -45,13 +45,7 @@
 }
 
 @media screen and (max-width: 996px) {
-  .custom_card_col {
-    --ifm-col-width: 50% !important;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .custom_card_col {
-    --ifm-col-width: 100% !important;
-  }
 }

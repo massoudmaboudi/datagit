@@ -221,10 +221,12 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                 {filteredCourses.length > 0 ? (
                     <div className="row">
                         {filteredCourses.map((course) => (
-                            <FeatureCardNoImage
-                                key={course.title} // Title should be unique
-                                course={course}
-                            />
+                            <div key={course.title} className={clsx("col col--4 margin-bottom--lg", styles.custom_card_col)}>
+                                <FeatureCardNoImage
+                                    key={course.title} // Title should be unique
+                                    course={course}
+                                />
+                            </div>
                         ))}
                     </div>
                 ) : (

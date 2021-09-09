@@ -76,7 +76,14 @@
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+
+  .custom_card_col {
+    --ifm-col-width: 50% !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .custom_card_col {
+    --ifm-col-width: 100% !important;
+  }
 }
