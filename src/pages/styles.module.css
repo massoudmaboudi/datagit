@@ -1,13 +1,4 @@
-/* stylelint-disable docusaurus/copyright-header
-
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-/* var(--ifm-color-primary) */
-
-.heroBanner {
+.header {
   padding: 2rem 0;
   height: calc(100vh - var(--ifm-navbar-height));
   position: relative;
@@ -25,64 +16,64 @@
   background-size: cover;
 }
 
-.hero__title {
-  font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
-}
-
-.hero__subtitle {
-  padding-bottom: 2rem;
-}
-
-.custom_col__4_col__offset_1 {
+.header_row_col__4_col__offset_1 {
   margin-bottom: auto;
   margin-top: 80px;
 }
 
-.getStarted {
+.header_row_col__4_col__offset_1__title {
+  font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
+}
+
+.header_row_col__4_col__offset_1__subtitle {
+  padding-bottom: 2rem;
+}
+
+.header_row_col__4_col__offset_1__getStarted {
   --ifm-button-size-multiplier: 1.2;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
+  .header {
     height: auto;
     padding: 0 2rem;
     background-position: top;
   }
 
-  .hero__subtitle {
+  .header_row_col__4_col__offset_1__subtitle {
     text-align: center;
   }
 
-  .custom_row {
+  .header_row {
     text-align: center;
   }
 
-  .custom_col__4_col__offset_1 {
+  .header_row_col__4_col__offset_1 {
     margin: auto;
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 
-  .custom_col__6_col__offset_1 {
+  .header_row_col__6_col__offset_1 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .heroBanner {
+  .header {
     padding: 0 0.2rem;
   }
 
-  .hero__subtitle {
+  .header_row_col__4_col__offset_1__subtitle {
     padding-bottom: 1rem;
   }
 
-  .getStarted {
+  .header_row_col__4_col__offset_1__getStarted {
     --ifm-button-size-multiplier: 1;
   }
 
-  .custom_col__6_col__offset_1 {
+  .header_row_col__6_col__offset_1 {
     padding-top: 2rem !important;
   }
 }

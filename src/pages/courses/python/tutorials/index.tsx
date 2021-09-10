@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback, useEffect } from 'react';
 
 import Layout from '@theme/Layout';
 import FeatureCheckbox from '../../../../components/Feature/FeatureCheckbox';
-import FeatureSelect from '../../../../components/Feature/FeatureSelect';
+// import FeatureSelect from '../../../../components/Feature/FeatureSelect';
 import FeatureCardNoImage from '../../../../components/Feature/FeatureCardNoImg';
 import styles from './styles.module.css';
 import clsx from 'clsx';
@@ -127,10 +127,10 @@ function FeatureHeader() {
     const [operator, setOperator] = useState<Operator>('OR');
 
     return (
-        <div className={clsx("hero shadow--lw", styles.tutorials_custom_hero)}>
+        <div className={clsx(styles.header, "hero shadow--lw")}>
             <div className="container">
-                <h1>آموزش‌های پایتون</h1>
-                <p className="padding-horiz--md">سطح برنامه‌نویسی خودتون در پایتون رو با دوره‌های آموزشی پایین، بالا ببرید</p>
+                <h1>{TITLE}</h1>
+                <p className="padding-horiz--md">{DESCRIPTION}</p>
                 {/* <div className="search">
                     <input
                         className={clsx("shadow--lw")}
@@ -171,7 +171,7 @@ function FeatureFilters({
                     const { label, description } = Tags[tag];
                     // const { label, description, icon } = Tags[tag];
                     return (
-                        <div key={tag} className={clsx("col col--3", styles.custom_filter_col)}>
+                        <div key={tag} className={clsx("col col--3", styles.header_filter_col)}>
                             <FeatureCheckbox
                                 // TODO add a proper tooltip
                                 title={`${label}: ${description}`}
@@ -221,7 +221,7 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                 {filteredCourses.length > 0 ? (
                     <div className="row">
                         {filteredCourses.map((course) => (
-                            <div key={course.title} className={clsx("col col--4 margin-bottom--lg", styles.custom_card_col)}>
+                            <div key={course.title} className={clsx("col col--4 margin-bottom--lg", styles.main_card_col)}>
                                 <FeatureCardNoImage
                                     key={course.title} // Title should be unique
                                     course={course}
