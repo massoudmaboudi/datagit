@@ -10,7 +10,7 @@ const sectionsItems = [
         title: 'آموزش ها',
         description: 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن.',
         path: './python/tutorials',
-        cover: '/img/general/courseway.svg'
+        cover: '/img/general/pathway.svg'
     },
     {
         title: 'مثال ها',
@@ -31,7 +31,7 @@ function FeatureCards({ sections }) {
         <section className="container">
             <div className="row">
                 {sections.map((section) => (
-                    <div key={section.title} className={clsx("col col--4 margin-bottom--lg", styles.custom_card_col)}>
+                    <div key={section.title} className={clsx(styles.main_card_col, "col col--4 margin-bottom--lg")}>
                         <FeatureCard
                             key={section.title} // Title should be unique
                             course={section}
@@ -60,7 +60,9 @@ const KEYWORDS = [
     'آموزش رایگان پایتون']
 
 const SECTION_TITLE = TITLE
-const SECTION_SUBTITLE = "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\nخوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هست"
+const SECTION_SUBTITLE = `پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.
+
+خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هست`
 
 function SectionsInner() {
     return (
@@ -69,17 +71,17 @@ function SectionsInner() {
             description={DESCRIPTION}
             keywords={KEYWORDS}
         >
-            <header className={styles.sectionsHeader}>
+            <header className={styles.header}>
                 <div className="container">
                     <div className="row">
-                        <div className={clsx(styles.sections_logo_div, "col col--4")}>
-                            <img className={styles.headerImg} src="/img/python/python-logo.svg" />
+                        <div className={clsx(styles.header_logo, "col col--4")}>
+                            <img className={styles.header_logo__img} src="/img/python/python-logo.svg" />
                         </div>
-                        <div className={clsx(styles.sections_desc_div, "col col--6")}>
-                            <img className={styles.headerImgMobile} src="/img/python/python-logo.svg" />
+                        <div className={clsx(styles.header_desc, "col col--6")}>
+                            <img className={styles.header_desc__img_mobile} src="/img/python/python-logo.svg" />
                             <div>
-                                <h1 className={styles.sections__title}>{SECTION_TITLE}</h1>
-                                <p className={styles.sections__subtitle}>{SECTION_SUBTITLE}</p>
+                                <h1 className={styles.header_desc__title}>{SECTION_TITLE}</h1>
+                                <p className={styles.header_desc__subtitle}>{SECTION_SUBTITLE}</p>
                             </div>
                         </div>
                     </div>
