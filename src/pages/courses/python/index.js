@@ -1,8 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from '../styles.module.css';
 
 import FeatureCard from '../../../components/Feature/FeatureCard';
@@ -12,19 +10,19 @@ const sectionsItems = [
         title: 'آموزش ها',
         description: 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن.',
         path: './python/tutorials',
-        cover: useBaseUrl('/img/general/courseway.svg')
+        cover: '/img/general/courseway.svg'
     },
     {
         title: 'مثال ها',
         description: 'بهترین راه برای یادگیری، تمرین و کدنویسیه!',
         path: 'docs/',
-        cover: useBaseUrl('/img/general/console.svg')
+        cover: '/img/general/console.svg'
     },
     {
         title: 'مرجع',
         description: 'گاهی اوقات باید لبه‌ی دانشمون رو با مرور مفاهیم تیز کنیم.',
         path: 'docs/',
-        cover: useBaseUrl('/img/general/steps.svg')
+        cover: '/img/general/steps.svg'
     }
 ]
 
@@ -61,9 +59,10 @@ const KEYWORDS = [
     'آموزش پایتون',
     'آموزش رایگان پایتون']
 
+const SECTION_TITLE = TITLE
+const SECTION_SUBTITLE = "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\nخوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هست"
+
 function SectionsInner() {
-    const context = useDocusaurusContext();
-    const { siteConfig = {} } = context;
     return (
         <Layout
             title={TITLE}
@@ -74,14 +73,13 @@ function SectionsInner() {
                 <div className="container">
                     <div className="row">
                         <div className={clsx(styles.sections_logo_div, "col col--4")}>
-                            <img className={styles.headerImg} src={useBaseUrl("/img/python/python-logo.svg")} />
-
+                            <img className={styles.headerImg} src="/img/python/python-logo.svg" />
                         </div>
                         <div className={clsx(styles.sections_desc_div, "col col--6")}>
-                            <img className={styles.headerImgMobile} src={useBaseUrl("/img/python/python-loo.svg")} />
+                            <img className={styles.headerImgMobile} src="/img/python/python-logo.svg" />
                             <div>
-                                <h1 className={styles.sections__title}>پایتون</h1>
-                                <p className={styles.sections__subtitle}>پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.<br /><br />خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هست.</p>
+                                <h1 className={styles.sections__title}>{SECTION_TITLE}</h1>
+                                <p className={styles.sections__subtitle}>{SECTION_SUBTITLE}</p>
                             </div>
                         </div>
                     </div>
