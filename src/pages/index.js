@@ -6,8 +6,18 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import { translate } from '@docusaurus/Translate';
 
-const TITLE = 'صفحه اصلی'
-const DESCRIPTION = "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم."
+const TITLE = translate({
+  id: "pages.main.title",
+  message: "آموزش با طعم داده",
+  description: "The main title in the first page"
+})
+
+const DESCRIPTION = translate({
+  id: "pages.main.description",
+  message: "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم.",
+  description: "The main description in the first page"
+})
+
 const KEYWORDS = [
   'مسعود معبودی',
   'Massoud Maboudi',

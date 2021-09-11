@@ -190,5 +190,41 @@
   "theme.blog.archive.description": {
     "message": "Archive",
     "description": "The page & hero description of the blog archive page"
+  },
+  "pages.main.title": {
+    "message": "Learning with the taste of Data",
+    "description": "The main title in the first page"
+  },
+  "pages.main.description": {
+    "message": "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم.",
+    "description": "The main description in the first page"
+  },
+  "pages.courses.python.main.sectionsItems.tutorials": {
+    "message": "Tutorials",
+    "description": "The section of tutorials in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.examples": {
+    "message": "Examples",
+    "description": "The section of examples in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.reference": {
+    "message": "Reference",
+    "description": "The section of reference in the Python course"
+  },
+  "pages.courses.python.main.title": {
+    "message": "Python",
+    "description": "The main title in the Python course"
+  },
+  "pages.courses.python.main.description": {
+    "message": "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم.",
+    "description": "The main description in the Python course"
+  },
+  "pages.courses.python.main.headerTitle": {
+    "message": "Python",
+    "description": "The header title in the Python course"
+  },
+  "pages.courses.python.main.headerSubtitle": {
+    "message": "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\n    خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هستش.",
+    "description": "The header subtitle in the Python course"
   }
 }

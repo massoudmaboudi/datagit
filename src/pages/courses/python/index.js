@@ -2,24 +2,37 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import styles from '../styles.module.css';
+import { translate } from '@docusaurus/Translate';
 
 import FeatureCard from '../../../components/Feature/FeatureCardNoNum';
 
 const sectionsItems = [
     {
-        title: 'آموزش ها',
+        title: translate({
+            id: "pages.courses.python.main.sectionsItems.tutorials",
+            message: "آموزش ها",
+            description: "The section of tutorials in the Python course"
+        }),
         description: 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن.',
         path: './python/tutorials',
         cover: '/img/general/pathway.svg'
     },
     {
-        title: 'مثال ها',
+        title: translate({
+            id: "pages.courses.python.main.sectionsItems.examples",
+            message: "مثال ها",
+            description: "The section of examples in the Python course"
+        }),
         description: 'بهترین راه برای یادگیری، تمرین و کدنویسیه!',
         path: './python/examples',
         cover: '/img/general/console.svg'
     },
     {
-        title: 'مرجع',
+        title: translate({
+            id: "pages.courses.python.main.sectionsItems.reference",
+            message: "مرجع",
+            description: "The section of reference in the Python course"
+        }),
         description: 'گاهی اوقات باید لبه‌ی دانشمون رو با مرور مفاهیم تیز کنیم.',
         path: './python/reference',
         cover: '/img/general/steps.svg'
@@ -43,8 +56,18 @@ function FeatureCards({ sections }) {
     );
 }
 
-const TITLE = 'پایتون'
-const DESCRIPTION = "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم."
+const TITLE = translate({
+    id: "pages.courses.python.main.title",
+    message: "پایتون",
+    description: "The main title in the Python course"
+})
+
+const DESCRIPTION = translate({
+    id: "pages.courses.python.main.description",
+    message: "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم.",
+    description: "The main description in the Python course"
+})
+
 const KEYWORDS = [
     'مسعود معبودی',
     'Massoud Maboudi',
@@ -60,10 +83,17 @@ const KEYWORDS = [
     'آموزش رایگان پایتون'
 ]
 
-const SECTION_TITLE = TITLE
-const SECTION_SUBTITLE = `پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.
+const HEADER_TITLE = translate({
+    id: "pages.courses.python.main.headerTitle",
+    message: "پایتون",
+    description: "The header title in the Python course"
+})
 
-خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هستش.`
+const HEADER_SUBTITLE = translate({
+    id: "pages.courses.python.main.headerSubtitle",
+    message: "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\n    خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هستش.",
+    description: "The header subtitle in the Python course"
+})
 
 function SectionsInner() {
     return (
@@ -81,8 +111,8 @@ function SectionsInner() {
                         <div className={clsx(styles.header_desc, "col col--6")}>
                             <img className={styles.header_desc__img_mobile} src="/img/python/python-logo.svg" />
                             <div>
-                                <h1 className={styles.header_desc__title}>{SECTION_TITLE}</h1>
-                                <p className={styles.header_desc__subtitle}>{SECTION_SUBTITLE}</p>
+                                <h1 className={styles.header_desc__title}>{HEADER_TITLE}</h1>
+                                <p className={styles.header_desc__subtitle}>{HEADER_SUBTITLE}</p>
                             </div>
                         </div>
                     </div>
