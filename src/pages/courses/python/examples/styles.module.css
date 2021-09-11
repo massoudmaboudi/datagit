@@ -34,7 +34,7 @@
   top: 0;
   left: 5%;
   right: 5%;
-  width: 90%;
+  width: 100%;
   height: 2px;
   background-image: linear-gradient(
     to left,
@@ -46,14 +46,6 @@
 
 .main_card_col {
   margin-bottom: 1rem !important;
-}
-
-.main_card_col:nth-child(-n + 2) {
-  margin-top: 0.5rem !important;
-}
-
-.main_card_col:nth-last-child(-n + 2) {
-  margin-bottom: 1.5rem !important;
 }
 
 @media screen and (max-width: 996px) {

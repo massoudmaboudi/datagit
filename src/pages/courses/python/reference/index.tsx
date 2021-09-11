@@ -167,7 +167,7 @@ function FeatureFilters({
     setOperator,
 }: Props) {
     return (
-        <div className="container margin-top--l margin-bottom--md">
+        <div className="margin-top--l margin-bottom--md">
             <div className="row">
                 {TagList.map((tag) => {
                     const { label, description } = Tags[tag];

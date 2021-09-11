@@ -167,7 +167,7 @@ function FeatureFilters({
     setOperator,
 }: Props) {
     return (
-        <div className="container margin-top--l margin-bottom--md">
+        <div className="margin-top--l margin-bottom--md">
             <div className="row">
                 {TagList.map((tag) => {
                     const { label, description } = Tags[tag];
@@ -213,7 +213,7 @@ function FeatureFilters({
     );
 }
 
-function FeatureCards2({ filteredCourses }: { filteredCourses: Course[] }) {
+function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
 
     const getUniqueBy = (prop, list) => {
         const objUniq = list.reduce((res, item) => ({ ...res, [item[prop]]: item }), {})
@@ -240,7 +240,7 @@ function FeatureCards2({ filteredCourses }: { filteredCourses: Course[] }) {
                                 course_idx = 0;
                                 return (
                                     <div key={label} className={clsx(styles.main_row_container, "container")}>
-                                        <div className="row">
+                                        <div className="container row">
                                             <h3>{label}</h3>
                                         </div>
                                         <div className="row">
@@ -289,7 +289,7 @@ function Feature() {
                 <FeatureHeader />
             </header>
             <main className="container margin-top--md margin-bottom--lg">
-                <FeatureCards2 filteredCourses={filteredCourses} />
+                <FeatureCards filteredCourses={filteredCourses} />
             </main>
         </Layout>
     );

@@ -23,6 +23,10 @@
   padding-top: 1rem !important;
 }
 
+.main_card_col {
+  margin-bottom: 1.2rem !important;
+}
+
 @media screen and (max-width: 996px) {
   .header_filter_col {
     --ifm-col-width: 50% !important;

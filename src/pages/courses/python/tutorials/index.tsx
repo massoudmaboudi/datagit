@@ -167,7 +167,7 @@ function FeatureFilters({
     setOperator,
 }: Props) {
     return (
-        <div className="container margin-top--l margin-bottom--md">
+        <div className="margin-top--l margin-bottom--md">
             <div className="row">
                 {TagList.map((tag) => {
                     const { label, description } = Tags[tag];
@@ -250,7 +250,7 @@ function Feature() {
             <header>
                 <FeatureHeader />
             </header>
-            <main className="container margin-vert--lg">
+            <main className="container margin-top--md margin-bottom--lg">
                 <FeatureCards filteredCourses={filteredCourses} />
             </main>
         </Layout>
