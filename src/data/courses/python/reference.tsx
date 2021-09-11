@@ -96,7 +96,14 @@ const Courses: Course[] = [
         description: 'دوره‌ای متفارنامه‌نویسی به زبان پای برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['advanced'],
+        tags: ['advanced', 'numpy'],
+    },
+    {
+        title: 'آموزش مقدماتی Numpy',
+        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // preview: require('../../../static/img/general/massoudmaboudi.png'),
+        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+        tags: ['numpy'],
     },
     {
         title: 'آموزش مقدماتی Numpy',

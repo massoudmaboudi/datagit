@@ -15,13 +15,15 @@ export type TagType =
     | 'favorite'
     | 'beginner'
     | 'advanced'
-    | 'matplotlib'
-    | 'pandas'
-    | 'numpy';
+    | 'object_oriented'
+    | 'decision_making_and_loops'
+    | 'functions'
+    | 'data_types'
+    | 'files';
 
 export type Course = {
     title: string;
-    description: string;
+    // description: string;
     // img: any;
     path: string;
     tags: TagType[];
@@ -48,19 +50,31 @@ export const Tags: Record<TagType, Tag> = {
         description: 'Open-Source courses can be useful for inspiration!',
         // icon: <></>,
     },
-    matplotlib: {
-        label: 'Matplotlib',
+    object_oriented: {
+        label: 'Object Oriented',
         description: 'courses associated to a commercial product!',
         // icon: <></>,
     },
-    pandas: {
-        label: 'Pandas',
+    decision_making_and_loops: {
+        label: 'Decision Making and Loops',
         description:
             'Beautiful courses, polished and standing out from the initial template!',
         // icon: <></>,
     },
-    numpy: {
-        label: 'Numpy',
+    functions: {
+        label: 'Functions',
+        description:
+            'Beautiful courses, polished and standing out from the initial template!',
+        // icon: <></>,
+    },
+    data_types: {
+        label: 'Data Types',
+        description:
+            'Beautiful courses, polished and standing out from the initial template!',
+        // icon: <></>,
+    },
+    files: {
+        label: 'Files',
         description:
             'Beautiful courses, polished and standing out from the initial template!',
         // icon: <></>,
@@ -71,39 +85,39 @@ export const Tags: Record<TagType, Tag> = {
 // prettier-ignore
 const Courses: Course[] = [
     {
-        title: 'آموزش مقدماتی پایتون',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        title: 'آموزش مقدماتی پایتونآموزش مقدماتی پایتونآموزش مقدماتی پایتونآموزش مقدماتی پایتونآموزش مقدماتی پایتونآموزش مقدماتی پایتون',
+        // description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['beginner', 'favorite'],
+        tags: ['beginner'],
     },
     {
         title: 'آموزش مقدماتی Matplotlib',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['matplotlib'],
+        tags: ['files'],
     },
     {
         title: 'آموزش مقدماتی Pandas',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['pandas'],
+        tags: ['data_types'],
     },
     {
         title: 'آموزش شی گرایی در پایتون',
-        description: 'دوره‌ای متفارنامه‌نویسی به زبان پای برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // description: 'دوره‌ای متفارنامه‌نویسی به زبان پای برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['advanced'],
+        tags: ['files'],
     },
     {
         title: 'آموزش مقدماتی Numpy',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        // description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['numpy'],
+        tags: ['functions'],
     },
 
     /*
@@ -130,7 +144,7 @@ function ensureCourseValid(course: Course) {
         const keys = Object.keys(course);
         const validKeys = [
             'title',
-            'description',
+            // 'description',
             // 'preview',
             'path',
             'tags',
@@ -149,11 +163,11 @@ function ensureCourseValid(course: Course) {
         }
     }
 
-    function checkDescription() {
-        if (!course.description) {
-            throw new Error('Course description is missing');
-        }
-    }
+    // function checkDescription() {
+    //     if (!course.description) {
+    //         throw new Error('Course description is missing');
+    //     }
+    // }
 
     function checkPath() {
         if (!course.path) {
@@ -189,7 +203,7 @@ function ensureCourseValid(course: Course) {
     try {
         checkFields();
         checkTitle();
-        checkDescription();
+        // checkDescription();
         checkPath();
         checkTags();
     } catch (e) {

@@ -3,21 +3,21 @@ import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import FeatureCheckbox from '../../../../components/Feature/FeatureCheckbox';
 // import FeatureSelect from '../../../../components/Feature/FeatureSelect';
-import FeatureCardNoImage from '../../../../components/Feature/FeatureCardNoImgNoNum';
+import FeatureCardNoImgNoDesc from '../../../../components/Feature/FeatureCardNoImgNoDesc';
 import styles from './styles.module.css';
 import clsx from 'clsx';
 
 import { useHistory, useLocation } from '@docusaurus/router';
 
 import { sortBy, toggleListItem } from '../../../../utils/jsUtils';
-import { SortedCourses, Tags, Tag, TagList, Course, TagType } from '../../../../data/courses/python/tutorials';
+import { SortedCourses, Tags, Tag, TagList, Course, TagType } from '../../../../data/courses/python/examples';
 
 type Operator = 'OR' | 'AND';
 
-const TITLE = 'آموزش‌های پایتون';
-const DESCRIPTION = 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن';
+const TITLE = 'مثال‌های پایتون';
+const DESCRIPTION = 'بهترین راه برای یادگیری، تمرین و کدنویسیه';
 
-const NOTHING_FOUND = 'هیچ دوره‌ای پیدا نشد!'
+const NOTHING_FOUND = 'هیچ مثالی پیدا نشد!'
 
 // function TagIcon({ label, description, icon }: Tag) {
 //     return (
@@ -173,7 +173,7 @@ function FeatureFilters({
                     const { label, description } = Tags[tag];
                     // const { label, description, icon } = Tags[tag];
                     return (
-                        <div key={tag} className={clsx("col col--3", styles.header_filter_col)}>
+                        <div key={tag} className={clsx("col col--4", styles.header_filter_col)}>
                             <FeatureCheckbox
                                 // TODO add a proper tooltip
                                 title={`${label}: ${description}`}
@@ -213,23 +213,61 @@ function FeatureFilters({
     );
 }
 
-function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
+function FeatureCards2({ filteredCourses }: { filteredCourses: Course[] }) {
+
+    const getUniqueBy = (prop, list) => {
+        const objUniq = list.reduce((res, item) => ({ ...res, [item[prop]]: item }), {})
+        return Object.keys(objUniq).map(item => objUniq[item])
+    }
+
+    const uniqueFilteredCourses = getUniqueBy('tags', filteredCourses)
+
+    let row_idx = 0
+
     return (
-        <section className="container margin-top--lg">
+        <section className="container">
             {/* <h2>
                 {filteredCourses.length} دوره{filteredCourses.length > 1 ? 's' : ''}
             </h2> */}
-            <div className="margin-top--lg">
+            <div >
                 {filteredCourses.length > 0 ? (
-                    <div className="row">
-                        {filteredCourses.map((course) => (
-                            <div key={course.title} className={clsx("col col--4 margin-bottom--lg", styles.main_card_col)}>
-                                <FeatureCardNoImage
-                                    key={course.title} // Title should be unique
-                                    course={course}
-                                />
-                            </div>
-                        ))}
+                    <div className="container">
+                        {TagList.map((tag, index) => {
+                            const { label, description } = Tags[tag];
+                            let course_idx = 1
+                            if (uniqueFilteredCourses.find(course => course.tags.includes(tag))) {
+                                row_idx += 1;
+                                course_idx = 0;
+                                return (
+                                    <div key={label} className={clsx(styles.main_row_container, "container")}>
+                                        <div className="row">
+                                            <h3>{label}</h3>
+                                        </div>
+                                        <div className="row">
+                                            {filteredCourses.map((course) => {
+                                                if (course.tags.includes(tag)) {
+                                                    course_idx += 1;
+                                                    course['id'] = course_idx;
+                                                    return (
+                                                        <div key={course.title} className={clsx("col col--6 margin-bottom--lg", styles.main_card_col)}>
+                                                            <FeatureCardNoImgNoDesc
+                                                                key={course.title} // Title should be unique
+                                                                course={course}
+                                                            />
+                                                        </div>
+                                                    )
+                                                }
+                                            })}
+                                        </div>
+                                        {row_idx !== uniqueFilteredCourses.length ? (
+                                            <div className={clsx(styles.main_row__divider, styles.main_row__div_transparent)}></div>
+                                        ) : (
+                                            <></>
+                                        )}
+                                    </div>
+                                )
+                            }
+                        })}
                     </div>
                 ) : (
                     <div className={clsx('padding-vert--md text--center')}>
@@ -237,7 +275,7 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                     </div>
                 )}
             </div>
-        </section>
+        </section >
     );
 }
 
@@ -250,8 +288,8 @@ function Feature() {
             <header>
                 <FeatureHeader />
             </header>
-            <main className="container margin-vert--lg">
-                <FeatureCards filteredCourses={filteredCourses} />
+            <main className="container margin-top--md margin-bottom--lg">
+                <FeatureCards2 filteredCourses={filteredCourses} />
             </main>
         </Layout>
     );

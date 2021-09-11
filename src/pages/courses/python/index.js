@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import styles from '../styles.module.css';
 
-import FeatureCard from '../../../components/Feature/FeatureCard';
+import FeatureCard from '../../../components/Feature/FeatureCardNoNum';
 
 const sectionsItems = [
     {
@@ -15,13 +15,13 @@ const sectionsItems = [
     {
         title: 'مثال ها',
         description: 'بهترین راه برای یادگیری، تمرین و کدنویسیه!',
-        path: 'docs/',
+        path: './python/examples',
         cover: '/img/general/console.svg'
     },
     {
         title: 'مرجع',
         description: 'گاهی اوقات باید لبه‌ی دانشمون رو با مرور مفاهیم تیز کنیم.',
-        path: 'docs/',
+        path: './python/reference',
         cover: '/img/general/steps.svg'
     }
 ]
@@ -63,7 +63,7 @@ const KEYWORDS = [
 const SECTION_TITLE = TITLE
 const SECTION_SUBTITLE = `پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.
 
-خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هست`
+خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هستش.`
 
 function SectionsInner() {
     return (
