@@ -240,7 +240,7 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                                 row_idx += 1;
                                 course_idx = 0;
                                 return (
-                                    <div key={label} className={clsx(styles.main_row_container, "container")}>
+                                    <div key={label} className={clsx(styles.main_row_container)}>
                                         <div className="row">
                                             <h3>{label}</h3>
                                         </div>
@@ -289,7 +289,7 @@ function Feature() {
             <header>
                 <FeatureHeader />
             </header>
-            <main className="container margin-top--md margin-bottom--lg">
+            <main className="margin-top--md margin-bottom--lg">
                 <FeatureCards filteredCourses={filteredCourses} />
             </main>
         </Layout>
