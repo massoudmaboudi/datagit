@@ -231,7 +231,7 @@ function FeatureCards2({ filteredCourses }: { filteredCourses: Course[] }) {
             </h2> */}
             <div >
                 {filteredCourses.length > 0 ? (
-                    <div className="container">
+                    <div>
                         {TagList.map((tag, index) => {
                             const { label, description } = Tags[tag];
                             let course_idx = 1

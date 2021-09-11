@@ -232,7 +232,7 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
             </h2> */}
             <div >
                 {filteredCourses.length > 0 ? (
-                    <div className="container">
+                    <div>
                         {TagList.map((tag, index) => {
                             const { label, description } = Tags[tag];
                             let course_idx = 1
@@ -240,11 +240,11 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                                 row_idx += 1;
                                 course_idx = 0;
                                 return (
-                                    <div key={label} className={clsx(styles.main_row_container)}>
-                                        <div className="row">
+                                    <div key={label} className={clsx("row", styles.main_row_container)}>
+                                        <div className="container">
                                             <h3>{label}</h3>
                                         </div>
-                                        <div className="row">
+                                        <div className="container">
                                             {filteredCourses.map((course) => {
                                                 if (course.tags.includes(tag)) {
                                                     course_idx += 1;
@@ -289,7 +289,7 @@ function Feature() {
             <header>
                 <FeatureHeader />
             </header>
-            <main className="margin-top--md margin-bottom--lg">
+            <main className="container margin-top--md margin-bottom--lg">
                 <FeatureCards filteredCourses={filteredCourses} />
             </main>
         </Layout>

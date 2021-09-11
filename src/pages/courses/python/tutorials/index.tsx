@@ -215,13 +215,13 @@ function FeatureFilters({
 
 function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
     return (
-        <section className="container margin-top--lg">
+        <section className="container">
             {/* <h2>
                 {filteredCourses.length} دوره{filteredCourses.length > 1 ? 's' : ''}
             </h2> */}
-            <div className="margin-top--lg">
+            <div>
                 {filteredCourses.length > 0 ? (
-                    <div className="row">
+                    <div className={clsx("row", styles.main_row_container)}>
                         {filteredCourses.map((course) => (
                             <div key={course.title} className={clsx("col col--4 margin-bottom--lg", styles.main_card_col)}>
                                 <FeatureCardNoImage
