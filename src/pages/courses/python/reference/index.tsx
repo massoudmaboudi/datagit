@@ -241,7 +241,7 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                                 course_idx = 0;
                                 return (
                                     <div key={label} className={clsx(styles.main_row_container)}>
-                                        <div className="container">
+                                        <div className="container row">
                                             <h3>{label}</h3>
                                         </div>
                                         <div className="row">
