@@ -240,11 +240,11 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                                 row_idx += 1;
                                 course_idx = 0;
                                 return (
-                                    <div key={label} className={clsx("row", styles.main_row_container)}>
+                                    <div key={label} className={clsx(styles.main_row_container)}>
                                         <div className="container">
                                             <h3>{label}</h3>
                                         </div>
-                                        <div className="container">
+                                        <div className="row">
                                             {filteredCourses.map((course) => {
                                                 if (course.tags.includes(tag)) {
                                                     course_idx += 1;
@@ -260,7 +260,7 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                                                 }
                                             })}
                                         </div>
-                                        {row_idx !== uniqueFilteredCourses.length ? (
+                                        {row_idx !== uniqueFilteredCourses.length + 1 ? (
                                             <div className={clsx(styles.main_row__divider, styles.main_row__div_transparent)}></div>
                                         ) : (
                                             <></>
