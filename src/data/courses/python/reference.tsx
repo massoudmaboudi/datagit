@@ -106,7 +106,7 @@ const Courses: Course[] = [
         tags: ['numpy'],
     },
     {
-        title: 'آموزش مقدماتی Numpy',
+        title: 'آموزش مقدماتی Numpy2',
         description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
