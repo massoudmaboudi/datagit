@@ -199,17 +199,29 @@
     "message": "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم.",
     "description": "The main description in the first page"
   },
-  "pages.courses.python.main.sectionsItems.tutorials": {
+  "pages.courses.python.main.sectionsItems.tutorials.title": {
     "message": "Tutorials",
-    "description": "The section of tutorials in the Python course"
+    "description": "The title of section of tutorials in the Python course"
   },
-  "pages.courses.python.main.sectionsItems.examples": {
+  "pages.courses.python.main.sectionsItems.tutorials.description": {
+    "message": "It's not difficult to learn anything!",
+    "description": "The description of section of tutorials in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.examples.title": {
     "message": "Examples",
-    "description": "The section of examples in the Python course"
+    "description": "The title of section of examples in the Python course"
   },
-  "pages.courses.python.main.sectionsItems.reference": {
+  "pages.courses.python.main.sectionsItems.examples.description": {
+    "message": "Learn By Doing, Practicing, and Not Just Reading!",
+    "description": "The description of section of examples in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.reference.title": {
     "message": "Reference",
-    "description": "The section of reference in the Python course"
+    "description": "The title of section of reference in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.reference.description": {
+    "message": "It's Important To sharpen our skill set often.",
+    "description": "The description of section of reference in the Python course"
   },
   "pages.courses.python.main.title": {
     "message": "Python",
@@ -328,7 +340,7 @@
     "description": "The main title in the tutorials page in Python course"
   },
   "pages.courses.python.tutorials.main.description": {
-    "message": "Learn By Doing, Practicing, and Not Just Reading",
+    "message": "It's not difficult to learn anything",
     "description": "The main description in the tutorials page in Python course"
   },
   "pages.courses.python.tutorials.main.nothing_found": {

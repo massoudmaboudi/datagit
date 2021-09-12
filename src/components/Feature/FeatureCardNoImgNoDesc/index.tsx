@@ -14,9 +14,10 @@ const FeatureCardNoImgNoDesc = memo(function ({ course }: { course: any }) {
           <div className="avatar">
             <div className="avatar__intro margin-left--none">
               <div className={styles.titleIconsRow}>
-              <div className={clsx(styles.counter, "avatar__name")}>{course.id}</div>
+                <div className={clsx(styles.counter)}>{course.id}</div>
                 <div className={styles.titleIconsRowTitle}>
-                  <div className="avatar__name">{course.title}</div>
+                  {/* <div className="avatar__name">{course.title}</div>*/
+                    <p className={clsx(styles.titleIconsRowSubTitle, "avatar__subtitle")}>{course.title}</p>}
                 </div>
                 {/* <div className={styles.titleIconsRowIcons}>
                   <FeatureTagIcons tags={course.tags} />

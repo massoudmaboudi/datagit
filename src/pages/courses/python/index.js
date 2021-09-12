@@ -9,31 +9,43 @@ import FeatureCard from '../../../components/Feature/FeatureCardNoNum';
 const sectionsItems = [
     {
         title: translate({
-            id: "pages.courses.python.main.sectionsItems.tutorials",
+            id: "pages.courses.python.main.sectionsItems.tutorials.title",
             message: "آموزش ها",
-            description: "The section of tutorials in the Python course"
+            description: "The title of section of tutorials in the Python course"
         }),
-        description: 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن.',
+        description: translate({
+            id: "pages.courses.python.main.sectionsItems.tutorials.description",
+            message: "یادگیری هیچ چیزی سخت نیست!",
+            description: "The description of section of tutorials in the Python course"
+        }),
         path: './python/tutorials',
         cover: '/img/general/pathway.svg'
     },
     {
         title: translate({
-            id: "pages.courses.python.main.sectionsItems.examples",
+            id: "pages.courses.python.main.sectionsItems.examples.title",
             message: "مثال ها",
-            description: "The section of examples in the Python course"
+            description: "The title of section of examples in the Python course"
         }),
-        description: 'بهترین راه برای یادگیری، تمرین و کدنویسیه!',
+        description: translate({
+            id: "pages.courses.python.main.sectionsItems.examples.description",
+            message: "بهترین راه برای یادگیری، تمرین و کدنویسیه!",
+            description: "The description of section of examples in the Python course"
+        }),
         path: './python/examples',
         cover: '/img/general/console.svg'
     },
     {
         title: translate({
-            id: "pages.courses.python.main.sectionsItems.reference",
+            id: "pages.courses.python.main.sectionsItems.reference.title",
             message: "مرجع",
-            description: "The section of reference in the Python course"
+            description: "The title of section of reference in the Python course"
         }),
-        description: 'گاهی اوقات باید لبه‌ی دانشمون رو با مرور مفاهیم تیز کنیم.',
+        description: translate({
+            id: "pages.courses.python.main.sectionsItems.reference.description",
+            message: "گاهی اوقات باید لبه‌ی دانشمون رو با مرور مفاهیم تیز کنیم",
+            description: "The description of section of reference in the Python course"
+        }),
         path: './python/reference',
         cover: '/img/general/steps.svg'
     }
@@ -91,7 +103,7 @@ const HEADER_TITLE = translate({
 
 const HEADER_SUBTITLE = translate({
     id: "pages.courses.python.main.headerSubtitle",
-    message: "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\n    خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هستش.",
+    message: "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\nخوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هستش.",
     description: "The header subtitle in the Python course"
 })
 

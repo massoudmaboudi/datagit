@@ -37,6 +37,10 @@
   user-select: none;
 }
 
+.titleIconsRowSubTitle {
+  margin: 0;
+}
+
 .course_feature_link {
   color: var(--ifm-color-content);
 }
@@ -47,8 +51,8 @@
 }
 
 .counter {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   display: block;
   background-color: #e3f2ff;
   border-radius: 100%;
