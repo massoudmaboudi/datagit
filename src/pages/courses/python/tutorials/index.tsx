@@ -4,7 +4,8 @@ import Layout from '@theme/Layout';
 import FeatureCheckbox from '../../../../components/Feature/FeatureCheckbox';
 // import FeatureSelect from '../../../../components/Feature/FeatureSelect';
 import FeatureCardNoImage from '../../../../components/Feature/FeatureCardNoImgNoNum';
-import styles from './styles.module.css';
+import styles from '../styles.module.css';
+import index from './index.module.css';
 import clsx from 'clsx';
 import { translate } from '@docusaurus/Translate';
 

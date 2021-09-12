@@ -4,7 +4,8 @@ import Layout from '@theme/Layout';
 import FeatureCheckbox from '../../../../components/Feature/FeatureCheckbox';
 // import FeatureSelect from '../../../../components/Feature/FeatureSelect';
 import FeatureCardNoImgNoDesc from '../../../../components/Feature/FeatureCardNoImgNoDesc';
-import styles from './styles.module.css';
+import styles from '../styles.module.css';
+import index from './index.module.css';
 import clsx from 'clsx';
 
 import { useHistory, useLocation } from '@docusaurus/router';
@@ -223,7 +224,7 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
     const uniqueFilteredCourses = getUniqueBy('tags', filteredCourses)
 
     let row_idx = 0
-
+    let course_idx = 0
     return (
         <section className="container">
             {/* <h2>
@@ -234,10 +235,10 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                     <div>
                         {TagList.map((tag, index) => {
                             const { label, description } = Tags[tag];
-                            let course_idx = 1
+                            // let course_idx = 1
                             if (uniqueFilteredCourses.find(course => course.tags.includes(tag))) {
                                 row_idx += 1;
-                                course_idx = 0;
+                                // course_idx = 0;
                                 return (
                                     <div key={label} className={clsx(styles.main_row_container, "container")}>
                                         <div className="container row">
@@ -259,11 +260,11 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                                                 }
                                             })}
                                         </div>
-                                        {row_idx !== uniqueFilteredCourses.length ? (
+                                        {/* {row_idx !== uniqueFilteredCourses.length ? (
                                             <div className={clsx(styles.main_row__divider, styles.main_row__div_transparent)}></div>
                                         ) : (
                                             <></>
-                                        )}
+                                        )} */}
                                     </div>
                                 )
                             }

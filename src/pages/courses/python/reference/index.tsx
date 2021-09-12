@@ -4,7 +4,8 @@ import Layout from '@theme/Layout';
 import FeatureCheckbox from '../../../../components/Feature/FeatureCheckbox';
 // import FeatureSelect from '../../../../components/Feature/FeatureSelect';
 import FeatureCardNoImgNoNum from '../../../../components/Feature/FeatureCardNoImgNoNum';
-import styles from './styles.module.css';
+import styles from '../styles.module.css';
+import index from './index.module.css';
 import clsx from 'clsx';
 
 import { useHistory, useLocation } from '@docusaurus/router';
@@ -260,11 +261,11 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                                                 }
                                             })}
                                         </div>
-                                        {row_idx !== uniqueFilteredCourses.length + 1 ? (
+                                        {/* {row_idx !== uniqueFilteredCourses.length + 1 ? (
                                             <div className={clsx(styles.main_row__divider, styles.main_row__div_transparent)}></div>
                                         ) : (
                                             <></>
-                                        )}
+                                        )} */}
                                     </div>
                                 )
                             }

@@ -23,6 +23,10 @@
   padding-top: 1rem !important;
 }
 
+.main_card_col {
+  margin-bottom: 1.2rem !important;
+}
+
 .main_row__divider {
   position: relative;
   height: 1px;
@@ -44,10 +48,6 @@
   );
 }
 
-.main_card_col {
-  margin-bottom: 1rem !important;
-}
-
 @media screen and (max-width: 996px) {
   .header_filter_col {
     --ifm-col-width: 50% !important;
@@ -58,7 +58,5 @@
   .header_filter_col {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
-
-    --ifm-col-width: 100% !important;
   }
 }

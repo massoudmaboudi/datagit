@@ -1,12 +1,13 @@
 .checkboxContainer {
   display: inline;
-  padding: 5px;
+  padding: 5px 5px 5px 0;
   user-select: none;
 }
 
 .checkboxContainer,
 .checkboxContainer > * {
   cursor: pointer;
+  margin-left: 0;
 }
 
 .checkboxContainer label {
