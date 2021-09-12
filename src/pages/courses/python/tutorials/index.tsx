@@ -6,6 +6,7 @@ import FeatureCheckbox from '../../../../components/Feature/FeatureCheckbox';
 import FeatureCardNoImage from '../../../../components/Feature/FeatureCardNoImgNoNum';
 import styles from './styles.module.css';
 import clsx from 'clsx';
+import { translate } from '@docusaurus/Translate';
 
 import { useHistory, useLocation } from '@docusaurus/router';
 
@@ -14,10 +15,23 @@ import { SortedCourses, Tags, Tag, TagList, Course, TagType } from '../../../../
 
 type Operator = 'OR' | 'AND';
 
-const TITLE = 'آموزش‌های پایتون';
-const DESCRIPTION = 'آموزش های پروژه محور، بهترین روش برای یادگیری هستن';
+const TITLE = translate({
+    id: "pages.courses.python.tutorials.main.title",
+    message: "آموزش‌های پایتون",
+    description: "The main title in the tutorials page in Python course"
+})
 
-const NOTHING_FOUND = 'هیچ دوره‌ای پیدا نشد!'
+const DESCRIPTION = translate({
+    id: "pages.courses.python.tutorials.main.description",
+    message: "آموزش های پروژه محور، بهترین روش برای یادگیری هستن",
+    description: "The main description in the tutorials page in Python course"
+})
+
+const NOTHING_FOUND = translate({
+    id: "pages.courses.python.tutorials.main.nothing_found",
+    message: "هیچ دوره‌ای پیدا نشد!",
+    description: "The Nothing Found message in the tutorials page in Python course"
+})
 
 // function TagIcon({ label, description, icon }: Tag) {
 //     return (

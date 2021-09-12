@@ -226,5 +226,113 @@
   "pages.courses.python.main.headerSubtitle": {
     "message": "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\n    خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هستش.",
     "description": "The header subtitle in the Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.favorite.label": {
+    "message": "Favorite",
+    "description": "The label of favorite tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.favorite.description": {
+    "message": "Our favorite Python courses that you should absolutely check out!",
+    "description": "The description of favorite tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.beginner.label": {
+    "message": "Beginner",
+    "description": "The label of beginner tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.beginner.description": {
+    "message": "Python beginner courses",
+    "description": "The description of beginner tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.advanced.label": {
+    "message": "Advanced",
+    "description": "The label of advanced tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.advanced.description": {
+    "message": "Python advanced courses",
+    "description": "The description of advanced tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.matplotlib.label": {
+    "message": "Matplotlib",
+    "description": "The label of matplotlib tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.matplotlib.description": {
+    "message": "Matplotlib courses in Python",
+    "description": "The description of matplotlib tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.pandas.label": {
+    "message": "Pandas",
+    "description": "The label of pandas tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.pandas.description": {
+    "message": "Pandas courses in Python",
+    "description": "The description of pandas tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.numpy.label": {
+    "message": "NumPy",
+    "description": "The label of numpy tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.numpy.description": {
+    "message": "NumPy courses in Python",
+    "description": "The description of numpy tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.python_advanced.title": {
+    "message": "Python Advanced Tutorial",
+    "description": "The title of Python Advanced course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.python_advanced.description": {
+    "message": "A tutorial that teaches you advanced concepts in Python",
+    "description": "The description of Python Advanced course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.oop.title": {
+    "message": "Object-Oriented Programming (OOP) in Python",
+    "description": "The title of Python Object Oriented Programming (OOP) course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.oop.description": {
+    "message": "A simple course that focuses on Object-Oriented Programming in Python",
+    "description": "The description of Python Object Oriented Programming (OOP) course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.python_beginner.title": {
+    "message": "Python Beginner Tutorial",
+    "description": "The title of Python Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.python_beginner.description": {
+    "message": "An extraordinary tutorial for beginners who want to start Python programming",
+    "description": "The description of Python Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.matplotlib_beginner.title": {
+    "message": "Matplotlib Tutorial for Beginners",
+    "description": "The title of Matplotlib Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.matplotlib_beginner.description": {
+    "message": "Learn basics of Python's powerful plotting library",
+    "description": "The description of Matplotlib Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.numpy_beginner.title": {
+    "message": "NumPy Tutorial for Absolute Beginners",
+    "description": "The title of Numpy Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.numpy_beginner.description": {
+    "message": "Learn the basics of the NumPy library to start",
+    "description": "The description of Numpy Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.pandas_beginner.title": {
+    "message": "Python Pandas for Beginners",
+    "description": "The title of Pandas Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.pandas_beginner.description": {
+    "message": "Everything Beginners Need to Know about Python Pandas",
+    "description": "The description of Pandas Beginner course in the tutorials data of Python course"
+  },
+  "pages.courses.python.tutorials.main.title": {
+    "message": "Python Tutorials",
+    "description": "The main title in the tutorials page in Python course"
+  },
+  "pages.courses.python.tutorials.main.description": {
+    "message": "Learn By Doing, Practicing, and Not Just Reading",
+    "description": "The main description in the tutorials page in Python course"
+  },
+  "pages.courses.python.tutorials.main.nothing_found": {
+    "message": "Nothing Found!",
+    "description": "The Nothing Found message in the tutorials page in Python course"
   }
 }
