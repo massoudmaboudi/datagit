@@ -1,6 +1,7 @@
 
 
 import React from 'react';
+import { translate } from '@docusaurus/Translate';
 import { difference, sortBy } from '../../../utils/jsUtils';
 
 const baseURL = '../../../';
@@ -12,12 +13,18 @@ export type Tag = {
 };
 
 export type TagType =
-    | 'favorite'
-    | 'beginner'
-    | 'advanced'
-    | 'matplotlib'
-    | 'pandas'
-    | 'numpy';
+    | 'built_in_functions'
+    | 'string_methods'
+    | 'list_methods'
+    | 'dictionary_methods'
+    | 'tuple_methods'
+    | 'set_methods'
+    | 'file_methods'
+    | 'keywords'
+    | 'exceptions'
+    | 'random_module'
+    | 'requests_module'
+    | 'math_module';
 
 export type Course = {
     title: string;
@@ -31,38 +38,160 @@ export type Course = {
 // Available tags to assign to the course
 export const Tags: Record<TagType, Tag> = {
     // DO NOT USE THIS TAG: I choose courses to add to favorites
-    favorite: {
-        label: 'ویژه',
-        description:
-            'Our favorite courses that you must absolutely check-out!',
+    built_in_functions: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.built_in_functions.label",
+            message: "توابع از پیش تعریف شده",
+            description: "The label of built-in functions tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.built_in_functions.description",
+            message: "توابع از پیش تعریف شده در پایتون",
+            description: "The description of built-in functions tag in the reference data of Python course"
+        }),
         // icon: <></>,
     },
-    beginner: {
-        label: 'مقدماتی',
-        description:
-            'Our favorite courses that you must absolutely check-out!',
+    string_methods: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.string_methods.label",
+            message: "متدهای رشته",
+            description: "The label of string methods tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.string_methods.description",
+            message: "متدهای رشته در پایتون",
+            description: "The description of string methods tag in the reference data of Python course"
+        }),
         // icon: <></>,
     },
-    advanced: {
-        label: 'پیشرفته',
-        description: 'Open-Source courses can be useful for inspiration!',
+    list_methods: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.list_methods.label",
+            message: "متدهای لیست",
+            description: "The label of list methods tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.list_methods.description",
+            message: "متدهای لیست در پایتون",
+            description: "The description of list methods tag in the reference data of Python course"
+        }),
         // icon: <></>,
     },
-    matplotlib: {
-        label: 'Matplotlib',
-        description: 'courses associated to a commercial product!',
+    dictionary_methods: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.dictionary_methods.label",
+            message: "متدهای دیکشنری",
+            description: "The label of dictionary methods tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.dictionary_methods.description",
+            message: "متدهای دیکشنری در پایتون",
+            description: "The description of dictionary methods tag in the reference data of Python course"
+        }),
         // icon: <></>,
     },
-    pandas: {
-        label: 'Pandas',
-        description:
-            'Beautiful courses, polished and standing out from the initial template!',
+    tuple_methods: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.tuple_methods.label",
+            message: "متدهای تاپل",
+            description: "The label of tuple methods tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.tuple_methods.description",
+            message: "متدهای تاپل در پایتون",
+            description: "The description of tuple methods tag in the reference data of Python course"
+        }),
         // icon: <></>,
     },
-    numpy: {
-        label: 'Numpy',
-        description:
-            'Beautiful courses, polished and standing out from the initial template!',
+    set_methods: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.set_methods.label",
+            message: "متدهای مجموعه",
+            description: "The label of set methods tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.set_methods.description",
+            message: "متدهای مجموعه در پایتون",
+            description: "The description of set methods tag in the reference data of Python course"
+        }),
+        // icon: <></>,
+    },
+    file_methods: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.file_methods.label",
+            message: "متدهای کار با فایل",
+            description: "The label of file methods tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.file_methods.description",
+            message: "متدهای کار با فایل در پایتون",
+            description: "The description of file methods tag in the reference data of Python course"
+        }),
+        // icon: <></>,
+    },
+    keywords: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.keywords.label",
+            message: "کلمات کلیدی",
+            description: "The label of keywords tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.keywords.description",
+            message: "کلمات کلیدی در پایتون",
+            description: "The description of keywords tag in the reference data of Python course"
+        }),
+        // icon: <></>,
+    },
+    exceptions: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.exceptions.label",
+            message: "استثناها",
+            description: "The label of exceptions tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.exceptions.description",
+            message: "استثناها در پایتون",
+            description: "The description of exceptions tag in the reference data of Python course"
+        }),
+        // icon: <></>,
+    },
+    random_module: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.random_module.label",
+            message: "ماژول Random",
+            description: "The label of random module tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.random_module.description",
+            message: "ماژول Random در پایتون",
+            description: "The description of random module tag in the reference data of Python course"
+        }),
+        // icon: <></>,
+    },
+    requests_module: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.requests_module.label",
+            message: "ماژول Requests",
+            description: "The label of requests module tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.requests_module.description",
+            message: "ماژول Requests در پایتون",
+            description: "The description of requests module tag in the reference data of Python course"
+        }),
+        // icon: <></>,
+    },
+    math_module: {
+        label: translate({
+            id: "src.data.courses.python.reference.Tags.math_module.label",
+            message: "ماژول Math",
+            description: "The label of math module tag in the reference data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Tags.math_module.description",
+            message: "ماژول Math در پایتون",
+            description: "The description of math module tag in the reference data of Python course"
+        }),
         // icon: <></>,
     },
 };
@@ -71,46 +200,19 @@ export const Tags: Record<TagType, Tag> = {
 // prettier-ignore
 const Courses: Course[] = [
     {
-        title: 'آموزش مقدماتی پایتون',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
+        title: translate({
+            id: "src.data.courses.python.reference.Courses.built_in_functions.abs.title",
+            message: "تابع ()abs در پایتون",
+            description: "The title of Python Advanced course in the tutorials data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.reference.Courses.built_in_functions.abs.description",
+            message: "قدر مطلق یک عدد را برمیگرداند",
+            description: "The title of Python Advanced course in the tutorials data of Python course"
+        }),
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['beginner', 'favorite'],
-    },
-    {
-        title: 'آموزش مقدماتی Matplotlib',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['matplotlib'],
-    },
-    {
-        title: 'آموزش مقدماتی Pandas',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['pandas'],
-    },
-    {
-        title: 'آموزش شی گرایی در پایتون',
-        description: 'دوره‌ای متفارنامه‌نویسی به زبان پای برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['advanced', 'numpy'],
-    },
-    {
-        title: 'آموزش مقدماتی Numpy',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['numpy'],
-    },
-    {
-        title: 'آموزش مقدماتی Numpy2',
-        description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['numpy'],
+        tags: ['built_in_functions'],
     },
 
     /*
@@ -125,7 +227,7 @@ function sortCourses() {
     // Sort by site name
     result = sortBy(result, (course) => course.title.toLowerCase());
     // Sort by favorite tag, favorites first
-    result = sortBy(result, (course) => !course.tags.includes('favorite'));
+    // result = sortBy(result, (course) => !course.tags.includes('favorite'));
     return result;
 }
 

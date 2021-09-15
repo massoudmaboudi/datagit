@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import styles from '../styles.module.css';
-import { translate } from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 import FeatureCard from '../../../components/Feature/FeatureCardNoNum';
 
@@ -51,22 +51,6 @@ const sectionsItems = [
     }
 ]
 
-function FeatureCards({ sections }) {
-    return (
-        <section className="container">
-            <div className="row">
-                {sections.map((section) => (
-                    <div key={section.title} className={clsx(styles.main_card_col, "col col--4 margin-bottom--lg")}>
-                        <FeatureCard
-                            key={section.title} // Title should be unique
-                            course={section}
-                        />
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
-}
 
 const TITLE = translate({
     id: "pages.courses.python.main.title",
@@ -95,17 +79,36 @@ const KEYWORDS = [
     'آموزش رایگان پایتون'
 ]
 
-const HEADER_TITLE = translate({
-    id: "pages.courses.python.main.headerTitle",
-    message: "پایتون",
-    description: "The header title in the Python course"
-})
+const HEADER_TITLE =
+    <Translate
+        id="pages.courses.python.main.headerTitle"
+        description="The header title in the Python course"
+        values={{ TITLE: TITLE }}>
+        {'{TITLE}'}
+    </Translate>
 
 const HEADER_SUBTITLE = translate({
     id: "pages.courses.python.main.headerSubtitle",
     message: "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمنیه های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\nخوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه ها برای شروع برنامه نویسی هستش.",
     description: "The header subtitle in the Python course"
 })
+
+function FeatureCards({ sections }) {
+    return (
+        <section className="container">
+            <div className="row">
+                {sections.map((section) => (
+                    <div key={section.title} className={clsx(styles.main_card_col, "col col--4 margin-bottom--lg")}>
+                        <FeatureCard
+                            key={section.title} // Title should be unique
+                            course={section}
+                        />
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+}
 
 function SectionsInner() {
     return (

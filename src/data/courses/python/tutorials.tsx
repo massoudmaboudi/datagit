@@ -40,7 +40,7 @@ export const Tags: Record<TagType, Tag> = {
         }),
         description: translate({
             id: "src.data.courses.python.tutorials.Tags.favorite.description",
-            message: "دوره‌های آموزشی ای که حتما باید ببینید.",
+            message: "دوره‌های آموزشی‌ای که حتما باید ببینید",
             description: "The description of favorite tag in the tutorials data of Python course"
         }),
         // icon: <></>,

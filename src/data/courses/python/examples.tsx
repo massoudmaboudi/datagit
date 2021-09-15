@@ -1,6 +1,7 @@
 
 
 import React from 'react';
+import { translate } from '@docusaurus/Translate';
 import { difference, sortBy } from '../../../utils/jsUtils';
 
 const baseURL = '../../../';
@@ -34,49 +35,107 @@ export type Course = {
 export const Tags: Record<TagType, Tag> = {
     // DO NOT USE THIS TAG: I choose courses to add to favorites
     favorite: {
-        label: 'ویژه',
-        description:
-            'Our favorite courses that you must absolutely check-out!',
+        label: translate({
+            id: "src.data.courses.python.examples.Tags.favorite.label",
+            message: "ویژه",
+            description: "The label of favorite tag in the examples data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.examples.Tags.favorite.description",
+            message: "مثال‌هایی که حتما باید ببینید",
+            description: "The description of favorite tag in the examples data of Python course"
+        }),
         // icon: <></>,
     },
     beginner: {
-        label: 'مقدماتی',
-        description:
-            'Our favorite courses that you must absolutely check-out!',
+        label: translate({
+            id: "src.data.courses.python.examples.Tags.beginner.label",
+            message: "مقدماتی",
+            description: "The label of beginner tag in the examples data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.examples.Tags.beginner.description",
+            message: "مثال‌های مقدماتی پایتون",
+            description: "The description of beginner tag in the examples data of Python course"
+        }),
         // icon: <></>,
     },
     advanced: {
-        label: 'پیشرفته',
-        description: 'Open-Source courses can be useful for inspiration!',
+        label: translate({
+            id: "src.data.courses.python.examples.Tags.advanced.label",
+            message: "پیشرفته",
+            description: "The label of advanced tag in the examples data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.examples.Tags.advanced.description",
+            message: "مثال‌های پیشرفته پایتون",
+            description: "The description of advanced tag in the examples data of Python course"
+        }),
         // icon: <></>,
     },
     object_oriented: {
-        label: 'Object Oriented',
-        description: 'courses associated to a commercial product!',
+        label: translate({
+            id: "src.data.courses.python.examples.Tags.object_oriented.label",
+            message: "شی گرایی",
+            description: "The label of object oriented tag in the examples data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.examples.Tags.object_oriented.description",
+            message: "مثال‌های شی گرایی در پایتون",
+            description: "The description of object oriented tag in the examples data of Python course"
+        }),
         // icon: <></>,
     },
     decision_making_and_loops: {
-        label: 'Decision Making and Loops',
-        description:
-            'Beautiful courses, polished and standing out from the initial template!',
+        label: translate({
+            id: "src.data.courses.python.examples.Tags.decision_making_and_loops.label",
+            message: "توابع شرطی و حلقه های تکرار",
+            description: "The label of decision making and loops tag in the examples data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.examples.Tags.decision_making_and_loops.description",
+            message: "مثال‌های توابع شرطی و حلقه های تکرار پایتون",
+            description: "The description of decision making and loops tag in the examples data of Python course"
+        }),
         // icon: <></>,
     },
     functions: {
-        label: 'Functions',
-        description:
-            'Beautiful courses, polished and standing out from the initial template!',
+        label: translate({
+            id: "src.data.courses.python.examples.Tags.functions.label",
+            message: "توابع",
+            description: "The label of functions tag in the examples data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.examples.Tags.functions.description",
+            message: "مثال‌های توابع در پایتون",
+            description: "The description of functions tag in the examples data of Python course"
+        }),
         // icon: <></>,
     },
     data_types: {
-        label: 'Data Types',
-        description:
-            'Beautiful courses, polished and standing out from the initial template!',
+        label: translate({
+            id: "src.data.courses.python.examples.Tags.data_types.label",
+            message: "انواع داده",
+            description: "The label of data types tag in the examples data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.examples.Tags.data_types.description",
+            message: "مثال‌های انواع داده در پایتون",
+            description: "The description of data types tag in the examples data of Python course"
+        }),
         // icon: <></>,
     },
     files: {
-        label: 'Files',
-        description:
-            'Beautiful courses, polished and standing out from the initial template!',
+        label: translate({
+            id: "src.data.courses.python.examples.Tags.files.label",
+            message: "کار با فایل",
+            description: "The label of files tag in the examples data of Python course"
+        }),
+        description: translate({
+            id: "src.data.courses.python.examples.Tags.files.description",
+            message: "مثال‌های انواع فایل در پایتون",
+            description: "The description of files tag in the examples data of Python course"
+        }),
         // icon: <></>,
     },
 };
@@ -85,40 +144,16 @@ export const Tags: Record<TagType, Tag> = {
 // prettier-ignore
 const Courses: Course[] = [
     {
-        title: 'آموزش مقدماتی پایتونآموزش مقدماتی پایتونآموزش مقدماتی پایتونآموزش مقدماتی پایتونآموزش مقدماتی پایتونآموزش مقدماتی پایتون',
+        title: translate({
+            id: "src.data.courses.python.examples.Courses.print_hello_world.title",
+            message: "برنامه چاپ Hello World در پایتون",
+            description: "The title of Print Hello World example in the examples data of Python course"
+        }),
         // description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
         // preview: require('../../../static/img/general/massoudmaboudi.png'),
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
         tags: ['beginner'],
-    },
-    {
-        title: 'آموزش مقدماتی Matplotlib',
-        // description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['files'],
-    },
-    {
-        title: 'آموزش مقدماتی Pandas',
-        // description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['data_types'],
-    },
-    {
-        title: 'آموزش شی گرایی در پایتون',
-        // description: 'دوره‌ای متفارنامه‌نویسی به زبان پای برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['files'],
-    },
-    {
-        title: 'آموزش مقدماتی Numpy',
-        // description: 'دوره‌ای متفاوت برای یادگیری مفاهیم اولیه و متوسط برنامه‌نویسی به زبان پایتون',
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['functions'],
-    },
+    }
 
     /*
     Pro Tip: add the course in alphabetical order.
