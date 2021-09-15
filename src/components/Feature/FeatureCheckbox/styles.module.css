@@ -1,6 +1,6 @@
 .checkboxContainer {
-  display: inline-flex;
-  /* align-items: flex-start; */
+  display: flex;
+  align-items: flex-start;
   /* padding: 5px 5px 5px 0; */
   user-select: none;
   vertical-align: bottom;
@@ -20,4 +20,10 @@
 .checkboxContainer label {
   margin-left: 0.2rem;
   text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 996px) {
+  .checkboxContainer input {
+    zoom: 1.1;
+  }
 }
