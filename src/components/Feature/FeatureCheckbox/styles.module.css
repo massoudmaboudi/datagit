@@ -1,18 +1,20 @@
 .checkboxContainer {
-  display: flex;
-  align-items: flex-start;
+  display: inline-flex;
+  /* align-items: flex-start; */
   /* padding: 5px 5px 5px 0; */
   user-select: none;
+  vertical-align: bottom;
 }
 
 .checkboxContainer,
 .checkboxContainer > * {
   cursor: pointer;
+  margin-bottom: 0;
   margin-left: 0;
 }
 
 .checkboxContainer input {
-  zoom: 1.2;
+  zoom: 1.35;
 }
 
 .checkboxContainer label {
