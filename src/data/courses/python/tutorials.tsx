@@ -115,36 +115,36 @@ export const Tags: Record<TagType, Tag> = {
 // Add the course to this list
 // prettier-ignore
 const Courses: Course[] = [
-    {
-        title: translate({
-            id: "src.data.courses.python.tutorials.Courses.python_advanced.title",
-            message: "آموزش پیشرفته پایتون",
-            description: "The title of Python Advanced course in the tutorials data of Python course"
-        }),
-        description: translate({
-            id: "src.data.courses.python.tutorials.Courses.python_advanced.description",
-            message: "یادگیری مفاهیم پیشرفته برنامه‌نویسی در زبان پایتون",
-            description: "The description of Python Advanced course in the tutorials data of Python course"
-        }),
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['advanced'],
-    },
-    {
-        title: translate({
-            id: "src.data.courses.python.tutorials.Courses.oop.title",
-            message: "آموزش شی گرایی در پایتون",
-            description: "The title of Python Object Oriented Programming (OOP) course in the tutorials data of Python course"
-        }),
-        description: translate({
-            id: "src.data.courses.python.tutorials.Courses.oop.description",
-            message: "آموزش برنامه نویسی شی گرا در پایتون به زبان ساده",
-            description: "The description of Python Object Oriented Programming (OOP) course in the tutorials data of Python course"
-        }),
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['advanced'],
-    },
+    // {
+    //     title: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.python_advanced.title",
+    //         message: "آموزش پیشرفته پایتون",
+    //         description: "The title of Python Advanced course in the tutorials data of Python course"
+    //     }),
+    //     description: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.python_advanced.description",
+    //         message: "یادگیری مفاهیم پیشرفته برنامه‌نویسی در زبان پایتون",
+    //         description: "The description of Python Advanced course in the tutorials data of Python course"
+    //     }),
+    //     // preview: require('../../../static/img/general/massoudmaboudi.png'),
+    //     path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+    //     tags: ['advanced'],
+    // },
+    // {
+    //     title: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.oop.title",
+    //         message: "آموزش شی گرایی در پایتون",
+    //         description: "The title of Python Object Oriented Programming (OOP) course in the tutorials data of Python course"
+    //     }),
+    //     description: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.oop.description",
+    //         message: "آموزش برنامه نویسی شی گرا در پایتون به زبان ساده",
+    //         description: "The description of Python Object Oriented Programming (OOP) course in the tutorials data of Python course"
+    //     }),
+    //     // preview: require('../../../static/img/general/massoudmaboudi.png'),
+    //     path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+    //     tags: ['advanced'],
+    // },
     {
         title: translate({
             id: "src.data.courses.python.tutorials.Courses.python_beginner.title",
@@ -160,51 +160,51 @@ const Courses: Course[] = [
         path: baseURL.concat('docs/courses/python/tutorials/introduction'),
         tags: ['beginner', 'favorite'],
     },
-    {
-        title: translate({
-            id: "src.data.courses.python.tutorials.Courses.matplotlib_beginner.title",
-            message: "آموزش مقدماتی Matplotlib",
-            description: "The title of Matplotlib Beginner course in the tutorials data of Python course"
-        }),
-        description: translate({
-            id: "src.data.courses.python.tutorials.Courses.matplotlib_beginner.description",
-            message: "آموزش مفاهیم اولیه کتابخانه قدرتمند Matplotlib برای رسم نمودار در پایتون",
-            description: "The description of Matplotlib Beginner course in the tutorials data of Python course"
-        }),
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['matplotlib', 'favorite'],
-    },
-    {
-        title: translate({
-            id: "src.data.courses.python.tutorials.Courses.numpy_beginner.title",
-            message: "آموزش مقدماتی NumPy",
-            description: "The title of Numpy Beginner course in the tutorials data of Python course"
-        }),
-        description: translate({
-            id: "src.data.courses.python.tutorials.Courses.numpy_beginner.description",
-            message: "دوره آموزش مقدماتی کار با کتابخانه NumPy در پایتون",
-            description: "The description of Numpy Beginner course in the tutorials data of Python course"
-        }),
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['numpy', 'favorite'],
-    },
-    {
-        title: translate({
-            id: "src.data.courses.python.tutorials.Courses.pandas_beginner.title",
-            message: "دوره مقدماتی آموزش Pandas",
-            description: "The title of Pandas Beginner course in the tutorials data of Python course"
-        }),
-        description: translate({
-            id: "src.data.courses.python.tutorials.Courses.pandas_beginner.description",
-            message: "آموزش مفاهیم مقدماتی مورد نیاز برای کار با کتابخانه Pandas",
-            description: "The description of Pandas Beginner course in the tutorials data of Python course"
-        }),
-        // preview: require('../../../static/img/general/massoudmaboudi.png'),
-        path: baseURL.concat('docs/courses/python/tutorials/introduction'),
-        tags: ['pandas', 'favorite'],
-    },
+    // {
+    //     title: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.matplotlib_beginner.title",
+    //         message: "آموزش مقدماتی Matplotlib",
+    //         description: "The title of Matplotlib Beginner course in the tutorials data of Python course"
+    //     }),
+    //     description: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.matplotlib_beginner.description",
+    //         message: "آموزش مفاهیم اولیه کتابخانه قدرتمند Matplotlib برای رسم نمودار در پایتون",
+    //         description: "The description of Matplotlib Beginner course in the tutorials data of Python course"
+    //     }),
+    //     // preview: require('../../../static/img/general/massoudmaboudi.png'),
+    //     path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+    //     tags: ['matplotlib', 'favorite'],
+    // },
+    // {
+    //     title: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.numpy_beginner.title",
+    //         message: "آموزش مقدماتی NumPy",
+    //         description: "The title of Numpy Beginner course in the tutorials data of Python course"
+    //     }),
+    //     description: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.numpy_beginner.description",
+    //         message: "دوره آموزش مقدماتی کار با کتابخانه NumPy در پایتون",
+    //         description: "The description of Numpy Beginner course in the tutorials data of Python course"
+    //     }),
+    //     // preview: require('../../../static/img/general/massoudmaboudi.png'),
+    //     path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+    //     tags: ['numpy', 'favorite'],
+    // },
+    // {
+    //     title: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.pandas_beginner.title",
+    //         message: "دوره مقدماتی آموزش Pandas",
+    //         description: "The title of Pandas Beginner course in the tutorials data of Python course"
+    //     }),
+    //     description: translate({
+    //         id: "src.data.courses.python.tutorials.Courses.pandas_beginner.description",
+    //         message: "آموزش مفاهیم مقدماتی مورد نیاز برای کار با کتابخانه Pandas",
+    //         description: "The description of Pandas Beginner course in the tutorials data of Python course"
+    //     }),
+    //     // preview: require('../../../static/img/general/massoudmaboudi.png'),
+    //     path: baseURL.concat('docs/courses/python/tutorials/introduction'),
+    //     tags: ['pandas', 'favorite'],
+    //  },
 
     /*
     Pro Tip: add the course in alphabetical order.

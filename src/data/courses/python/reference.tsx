@@ -37,7 +37,7 @@ export type Course = {
 // LIST OF AVAILABLE TAGS
 // Available tags to assign to the course
 export const Tags: Record<TagType, Tag> = {
-    // DO NOT USE THIS TAG: I choose courses to add to favorites
+
     built_in_functions: {
         label: translate({
             id: "src.data.courses.python.reference.Tags.built_in_functions.label",
