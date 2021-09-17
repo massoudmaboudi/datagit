@@ -11,10 +11,10 @@
   --ifm-color-content: #525f7f;
   --ifm-heading-color: #2d294f;
 
-  --ifm-font-family-base: "yekan", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --ifm-font-family-base: "IRANSansX", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  --ifm-heading-font-family: "yekan", -apple-system, BlinkMacSystemFont,
+  --ifm-heading-font-family: "IRANSansX", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 
@@ -22,7 +22,7 @@
 }
 
 button {
-  font-family: "yekan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "IRANSansX", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
