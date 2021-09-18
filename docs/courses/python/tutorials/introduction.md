@@ -41,7 +41,7 @@ image: "img/python/python-logo.svg"
 
 import Image from '@theme/IdealImage';
 
-import img1 from '@site/static/img/general/startingpoint/stackoverflow-survey-2020.png';
+import img1 from '@site/static/img/general/startingpoint/stackoverflow-survey-2021.png';
 
 ## **مقدمه**
 
@@ -49,8 +49,8 @@ import img1 from '@site/static/img/general/startingpoint/stackoverflow-survey-20
 
 سایت [stackoverflow.com](https://stackoverflow.com) یه تصویر خوبی به ما میده برای شروع که نشون میده زبان برنامه نویسی پایتون توی سال ۲۰۲۰ جزو ۵ زبان برنامه نویسی برتر دنیا هستش.
 
-<div className="col padding-vert--lg">
-  <Image img={img1} />
+<div className="padding-vert--md">
+  <Image img={img1}/>
 </div>
 
 ## **چرا پایتون**
