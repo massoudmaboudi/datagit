@@ -8,7 +8,7 @@ hide_table_of_contents: false
 description: عملگرهای مقایسه‌ای
 keywords:
   - عملگرهای مقایسه‌ای
-image:  "//img/logos/python-logo.svg"
+image:  "/img/logos/python-logo.svg"
 ---
 
 import Image from '@theme/IdealImage';

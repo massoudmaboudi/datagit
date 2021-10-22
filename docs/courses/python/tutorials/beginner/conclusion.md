@@ -37,7 +37,7 @@ keywords:
   - اموزش python مسعود معبودی
   - اموزش مقدماتی پایتون مسعود معبودی
   - اموزش مقدماتی پایتون مسعود معبودی
-image: "//img/logos/python-logo.svg"
+image: "/img/logos/python-logo.svg"
 ---
 
 [python_introduction]: /blog/python-introduction

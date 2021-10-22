@@ -8,7 +8,7 @@ hide_table_of_contents: false
 description: عبارت if-else
 keywords:
   - عبارت if-else
-image: "//img/logos/python-logo.svg"
+image: "/img/logos/python-logo.svg"
 ---
 
 import Image from '@theme/IdealImage';

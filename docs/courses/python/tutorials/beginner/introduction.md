@@ -5,7 +5,7 @@ title: آموزش مقدماتی پایتون
 description: توی این آموزش میخوام راجع به مقدمات زبان پایتون با هم صحبت کنیم و ببینم چطور میشه یه زبان برنامه نویسی به سادگی پایتون، کارهای زیادی برامون انجام بده. سعی میکنم توی این دوره آموزشی، تمام موارد مورد نیاز برای شروع برنامه نویسی پایتون رو براتون بگم.
 hide_title: false
 hide_table_of_contents: false
-image: "//img/logos/python-logo.svg"
+image: "/img/logos/python-logo.svg"
 pagination_label: آموزش مقدماتی پایتون
 sidebar_label: آموزش مقدماتی پایتون
 keywords:

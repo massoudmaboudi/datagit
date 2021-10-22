@@ -8,7 +8,7 @@ hide_table_of_contents: false
 description: معرفی توابع
 keywords:
   - معرفی توابع
-image:  "//img/logos/python-logo.svg"
+image:  "/img/logos/python-logo.svg"
 ---
 
 import Image from '@theme/IdealImage';

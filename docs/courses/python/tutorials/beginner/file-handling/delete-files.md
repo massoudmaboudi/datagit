@@ -8,7 +8,7 @@ hide_table_of_contents: false
 description: پاک کردن فایل
 keywords:
   - پاک کردن فایل
-image:  "//img/logos/python-logo.svg"
+image:  "/img/logos/python-logo.svg"
 ---
 
 import Image from '@theme/IdealImage';

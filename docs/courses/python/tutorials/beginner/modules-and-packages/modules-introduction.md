@@ -8,7 +8,7 @@ hide_table_of_contents: false
 description: ماژول‌ها در پایتون
 keywords:
   - ماژول‌ها در پایتون
-image:  "//img/logos/python-logo.svg"
+image:  "/img/logos/python-logo.svg"
 ---
 
 import Image from '@theme/IdealImage';

@@ -9,7 +9,7 @@ description: آموزش پایتون|دیتاگیت
 keywords:
   - آموزش مقدماتی پاتیون
   - آموزش پایتون
-image:  "//img/logos/python-logo.svg"
+image:  "/img/logos/python-logo.svg"
 ---
 
 مقدمه

@@ -5,7 +5,7 @@ title: نصب پایتون در مک
 description: نصب پایتون در مک
 hide_title: false
 hide_table_of_contents: false
-image: "//img/logos/python-logo.svg"
+image: "/img/logos/python-logo.svg"
 pagination_label: نصب پایتون در مک
 sidebar_label: نصب پایتون در مک
 keywords:
