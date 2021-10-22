@@ -174,7 +174,9 @@ module.exports = {
           blogTitle: 'وبلاگ دیتاگیت!',
           blogDescription: 'جایی برای خواندن همه چیز!',
           showReadingTime: true,
-          blogSidebarTitle: 'مطالب اخیر'
+          blogSidebarTitle: 'مطالب اخیر',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 'ALL'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
