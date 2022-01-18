@@ -181,6 +181,10 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'G-RELC8K3RRZ',
+          anonymizeIP: true,
+        }
       },
     ],
   ],
@@ -189,24 +193,36 @@ module.exports = {
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
-        max: 1030, // max resized image's size.
+        max: 1024, // max resized image's size.
         min: 640, // min resized image's size. if original is lower, use that size.
         steps: 2, // the max number of images generated between min and max (inclusive)
       },
     ],
-    ['@docusaurus/plugin-google-gtag',
-      {
-        id: 'gtag'
-      }
-    ],
     [
       '@docusaurus/plugin-sitemap',
       {
-        id: 'sitemap',
         changefreq: 'weekly',
         priority: 0.5
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/blog/python-introduction', // string
+            from: '/docs/python/introduction',
+          },
+        ],
+      },
+    ],
+    // [
+    //   require.resolve("@easyops-cn/docusaurus-search-local"),
+    //   {
+    //     hashed: true,
+    //     language: ["en", "ar"],
+    //   },
+    // ],
   ],
   scripts: [
   ],

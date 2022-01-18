@@ -37,7 +37,7 @@ import python_windows_installation_7 from '/img/docs/courses/python/beginner/get
 
 ## **دانلود پایتون**
 
-برای نصب آخرین نسخه پایتون به سایت [www.python.org](https://www.python.org/) برید تا عکس زیر رو ببینید:
+برای نصب آخرین نسخه پایتون به سایت [**www.python.org**](https://www.python.org/) برید تا عکس زیر رو ببینید:
 
 <div className="padding-vert--md">
   <Image img={python_windows_installation_1}/>

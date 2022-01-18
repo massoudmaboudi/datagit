@@ -9,7 +9,7 @@ description: شرط‌های تودرتو
 draft: true
 keywords:
   - شرط‌های تودرتو
-image: "//img/logos/python-logo.svg"
+image: "/img/logos/python-logo.svg"
 ---
 
 import Image from '@theme/IdealImage';

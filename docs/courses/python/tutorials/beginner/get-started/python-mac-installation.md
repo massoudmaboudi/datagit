@@ -92,7 +92,7 @@ python3 --version
 
 سریع‌ترین راه برای نصب پایتون توی مک اینه که فایل مناسب رو از سایت پایتون دانلود و نصب کنیم.
 
-برای نصب آخرین نسخه پایتون به سایت [www.python.org](https://www.python.org/) برید تا عکس زیر رو ببینید:
+برای نصب آخرین نسخه پایتون به سایت [**www.python.org**](https://www.python.org/) برید تا عکس زیر رو ببینید:
 
 <div className="padding-vert--md">
   <Image img={python_mac_installation_2}/>

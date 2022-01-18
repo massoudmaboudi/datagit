@@ -8,7 +8,7 @@ description: دامنه و فضای متغیر
 draft: true
 keywords:
   - دامنه و فضای متغیر در پایتون
-image: "//img/logos/python-logo.svg"
+image: "/img/logos/python-logo.svg"
 ---
 
 import Image from '@theme/IdealImage';
