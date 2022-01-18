@@ -30,10 +30,6 @@ module.exports = {
     // Cannot be SVGs. Can be external URLs too.
     image: 'img/metaImage.png',
     hideableSidebar: true,
-    gtag: {
-      trackingID: 'G-98VZHCYVG8',
-    },
-
     colorMode: {
       // "light" | "dark"
       defaultMode: 'light',
@@ -181,9 +177,11 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: 'G-98VZHCYVG8',
+        },
         gtag: {
           trackingID: 'G-RELC8K3RRZ',
-          anonymizeIP: true,
         }
       },
     ],
@@ -201,6 +199,7 @@ module.exports = {
     [
       '@docusaurus/plugin-sitemap',
       {
+        id: 'sitemap_one',
         changefreq: 'weekly',
         priority: 0.5
       },
