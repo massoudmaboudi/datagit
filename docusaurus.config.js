@@ -16,11 +16,11 @@ module.exports = {
   },
   title: 'دیتاگیت',
   tagline: 'برای برنامه نویس شدن باید دست به کد شد!',
-  url: 'https://docusaurus-2.netlify.com',
+  url: 'https://datagit.ir',
   baseUrl: '/',
   trailingSlash: false,
   organizationName: 'massoudmaboudi', // Usually your GitHub org/user name.
-  projectName: 'datagit_v2.docusaurus', // Usually your repo name.
+  projectName: 'datagit', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   // onBrokenMarkdownLinks:'ignore',
@@ -41,7 +41,6 @@ module.exports = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-
       title: 'دیتاگیت',
       logo: {
         alt: 'لوگو دیتاگیت',
