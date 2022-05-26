@@ -1,0 +1,546 @@
+{
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read More",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer Entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older Entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View All Tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages navigation",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to heading",
+    "description": "Title for link to heading"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "pages.main.datagit": {
+    "message": "Datagit",
+    "description": "The name of the project"
+  },
+  "pages.main.tagline": {
+    "message": "To become a programmer, you should get your hands dirty with code!",
+    "description": "The tagline of the project"
+  },
+  "pages.main.getStarted": {
+    "message": "Get Started",
+    "description": "The get started button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "pages.main.title": {
+    "message": "Learning with the taste of Data",
+    "description": "The main title in the first page"
+  },
+  "pages.main.description": {
+    "message": "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم.",
+    "description": "The main description in the first page"
+  },
+  "pages.courses.python.main.sectionsItems.tutorials.title": {
+    "message": "Tutorials",
+    "description": "The title of section of tutorials in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.tutorials.description": {
+    "message": "It's not difficult to learn anything!",
+    "description": "The description of section of tutorials in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.examples.title": {
+    "message": "Examples",
+    "description": "The title of section of examples in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.examples.description": {
+    "message": "Learn By Doing, Practicing, and Not Just Reading!",
+    "description": "The description of section of examples in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.reference.title": {
+    "message": "Reference",
+    "description": "The title of section of reference in the Python course"
+  },
+  "pages.courses.python.main.sectionsItems.reference.description": {
+    "message": "It's Important To sharpen our skill set often.",
+    "description": "The description of section of reference in the Python course"
+  },
+  "pages.courses.python.main.title": {
+    "message": "Python",
+    "description": "The main title in the Python course"
+  },
+  "pages.courses.python.main.description": {
+    "message": "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم.",
+    "description": "The main description in the Python course"
+  },
+  "pages.courses.python.main.headerTitle": {
+    "message": "{TITLE}",
+    "description": "The header title in the Python course"
+  },
+  "pages.courses.python.main.headerSubtitle": {
+    "message": "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمینه‌های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\n    خوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه‌ها برای شروع برنامه نویسی هستش.",
+    "description": "The header subtitle in the Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.favorite.label": {
+    "message": "Favorite",
+    "description": "The label of favorite tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.favorite.description": {
+    "message": "Our favorite Python courses that you should absolutely check out!",
+    "description": "The description of favorite tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.beginner.label": {
+    "message": "Beginner",
+    "description": "The label of beginner tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.beginner.description": {
+    "message": "Python beginner courses",
+    "description": "The description of beginner tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.advanced.label": {
+    "message": "Advanced",
+    "description": "The label of advanced tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.advanced.description": {
+    "message": "Python advanced courses",
+    "description": "The description of advanced tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.matplotlib.label": {
+    "message": "Matplotlib",
+    "description": "The label of matplotlib tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.matplotlib.description": {
+    "message": "Matplotlib courses in Python",
+    "description": "The description of matplotlib tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.pandas.label": {
+    "message": "Pandas",
+    "description": "The label of pandas tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.pandas.description": {
+    "message": "Pandas courses in Python",
+    "description": "The description of pandas tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.numpy.label": {
+    "message": "NumPy",
+    "description": "The label of numpy tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Tags.numpy.description": {
+    "message": "NumPy courses in Python",
+    "description": "The description of numpy tag in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.python_advanced.title": {
+    "message": "Python Advanced Tutorial",
+    "description": "The title of Python Advanced course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.python_advanced.description": {
+    "message": "A tutorial that teaches you advanced concepts in Python",
+    "description": "The description of Python Advanced course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.oop.title": {
+    "message": "Object-Oriented Programming (OOP) in Python",
+    "description": "The title of Python Object Oriented Programming (OOP) course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.oop.description": {
+    "message": "A simple course that focuses on Object-Oriented Programming in Python",
+    "description": "The description of Python Object Oriented Programming (OOP) course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.python_beginner.title": {
+    "message": "Python Beginner Tutorial",
+    "description": "The title of Python Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.python_beginner.description": {
+    "message": "An extraordinary tutorial for beginners who want to start Python programming",
+    "description": "The description of Python Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.matplotlib_beginner.title": {
+    "message": "Matplotlib Tutorial for Beginners",
+    "description": "The title of Matplotlib Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.matplotlib_beginner.description": {
+    "message": "Learn basics of Python's powerful plotting library",
+    "description": "The description of Matplotlib Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.numpy_beginner.title": {
+    "message": "NumPy Tutorial for Absolute Beginners",
+    "description": "The title of Numpy Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.numpy_beginner.description": {
+    "message": "Learn the basics of the NumPy library to start",
+    "description": "The description of Numpy Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.pandas_beginner.title": {
+    "message": "Python Pandas for Beginners",
+    "description": "The title of Pandas Beginner course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.tutorials.Courses.pandas_beginner.description": {
+    "message": "Everything Beginners Need to Know about Python Pandas",
+    "description": "The description of Pandas Beginner course in the tutorials data of Python course"
+  },
+  "pages.courses.python.tutorials.main.title": {
+    "message": "Python Tutorials",
+    "description": "The main title in the tutorials page in Python course"
+  },
+  "pages.courses.python.tutorials.main.description": {
+    "message": "It's not difficult to learn anything",
+    "description": "The main description in the tutorials page in Python course"
+  },
+  "pages.courses.python.tutorials.main.nothing_found": {
+    "message": "Nothing Found!",
+    "description": "The Nothing Found message in the tutorials page in Python course"
+  },
+  "src.data.courses.python.examples.Tags.favorite.label": {
+    "message": "Favorite",
+    "description": "The label of favorite tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.favorite.description": {
+    "message": "Our favorite Python examples that you should absolutely check out!",
+    "description": "The description of favorite tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.beginner.label": {
+    "message": "Beginner",
+    "description": "The label of beginner tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.beginner.description": {
+    "message": "Python beginner examples",
+    "description": "The description of beginner tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.advanced.label": {
+    "message": "Advanced",
+    "description": "The label of advanced tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.advanced.description": {
+    "message": "Python advanced examples",
+    "description": "The description of advanced tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.object_oriented.label": {
+    "message": "Object Oriented",
+    "description": "The label of object oriented tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.object_oriented.description": {
+    "message": "Python object oriented examples",
+    "description": "The description of object oriented tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.decision_making_and_loops.label": {
+    "message": "Decision Making and Loops",
+    "description": "The label of decision making and loops tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.decision_making_and_loops.description": {
+    "message": "Python decision making and loops examples",
+    "description": "The description of decision making and loops tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.functions.label": {
+    "message": "Functions",
+    "description": "The label of functions tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.functions.description": {
+    "message": "Python functions examples",
+    "description": "The description of functions tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.data_types.label": {
+    "message": "Data Types",
+    "description": "The label of data types tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.data_types.description": {
+    "message": "Python data types examples",
+    "description": "The description of data types tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.files.label": {
+    "message": "Files",
+    "description": "The label of files tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Tags.files.description": {
+    "message": "Python files examples",
+    "description": "The description of files tag in the examples data of Python course"
+  },
+  "src.data.courses.python.examples.Courses.print_hello_world.title": {
+    "message": "Python Program to Print Hello World!",
+    "description": "The title of Print Hello World example in the examples data of Python course"
+  },
+  "pages.courses.python.examples.main.title": {
+    "message": "Python Examples",
+    "description": "The main title in the examples page in Python course"
+  },
+  "pages.courses.python.examples.main.description": {
+    "message": "Learn By Doing, Practicing, and Not Just Reading",
+    "description": "The main description in the examples page in Python course"
+  },
+  "pages.courses.python.examples.main.nothing_found": {
+    "message": "Nothing Found!",
+    "description": "The Nothing Found message in the examples page in Python course"
+  },
+  "pages.courses.python.reference.main.title": {
+    "message": "Python Reference",
+    "description": "The main title in the reference page in Python course"
+  },
+  "pages.courses.python.reference.main.description": {
+    "message": "It's Important To sharpen our skill set often",
+    "description": "The main description in the reference page in Python course"
+  },
+  "pages.courses.python.reference.main.nothing_found": {
+    "message": "Nothing Found!",
+    "description": "The Nothing Found message in the reference page in Python course"
+  },
+  "src.data.courses.python.reference.Tags.built_in_functions.label": {
+    "message": "Built-in Functions",
+    "description": "The label of built-in functions tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.built_in_functions.description": {
+    "message": "Python Built-in Functions",
+    "description": "The description of built-in functions tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.string_methods.label": {
+    "message": "String Methods",
+    "description": "The label of string methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.string_methods.description": {
+    "message": "Python String Methods",
+    "description": "The description of string methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.list_methods.label": {
+    "message": "List Methods",
+    "description": "The label of list methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.list_methods.description": {
+    "message": "Python List Methods",
+    "description": "The description of list methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.dictionary_methods.label": {
+    "message": "Dictionary Methods",
+    "description": "The label of dictionary methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.dictionary_methods.description": {
+    "message": "Python Dictionary Methods",
+    "description": "The description of dictionary methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.tuple_methods.label": {
+    "message": "Tuple Methods",
+    "description": "The label of tuple methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.tuple_methods.description": {
+    "message": "Python Tuple Methods",
+    "description": "The description of tuple methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.set_methods.label": {
+    "message": "Set Methods",
+    "description": "The label of set methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.set_methods.description": {
+    "message": "Python Set Methods",
+    "description": "The description of set methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.file_methods.label": {
+    "message": "File Methods",
+    "description": "The label of file methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.file_methods.description": {
+    "message": "Python File Methods",
+    "description": "The description of file methods tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.keywords.label": {
+    "message": "Keywords",
+    "description": "The label of keywords tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.keywords.description": {
+    "message": "Python Keywords",
+    "description": "The description of keywords tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.exceptions.label": {
+    "message": "Exceptions",
+    "description": "The label of exceptions tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.exceptions.description": {
+    "message": "Python Exceptions",
+    "description": "The description of exceptions tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.random_module.label": {
+    "message": "Random Module",
+    "description": "The label of random module tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.random_module.description": {
+    "message": "Python Random Module",
+    "description": "The description of random module tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.requests_module.label": {
+    "message": "Requests Module",
+    "description": "The label of requests module tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.requests_module.description": {
+    "message": "Python Requests Module",
+    "description": "The description of requests module tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.math_module.label": {
+    "message": "Math Module",
+    "description": "The label of math module tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Tags.math_module.description": {
+    "message": "Python Math Module",
+    "description": "The description of math module tag in the reference data of Python course"
+  },
+  "src.data.courses.python.reference.Courses.built_in_functions.abs.title": {
+    "message": "Python abs()",
+    "description": "The title of Python Advanced course in the tutorials data of Python course"
+  },
+  "src.data.courses.python.reference.Courses.built_in_functions.abs.description": {
+    "message": "Return the absolute value of a number",
+    "description": "The title of Python Advanced course in the tutorials data of Python course"
+  }
+}

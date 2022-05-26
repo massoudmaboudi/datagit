@@ -2,20 +2,25 @@ module.exports = {
 
   i18n: {
     defaultLocale: "fa",
-    locales: ["fa"],
+    locales: ["fa", "en"],
     localeConfigs: {
       'fa': {
+        label: "فارسی",
         direction: "rtl"
+      },
+      'en': {
+        label: "English",
+        direction: "ltr"
       }
     }
   },
   title: 'دیتاگیت',
   tagline: 'برای برنامه نویس شدن باید دست به کد شد!',
-  url: 'https://docusaurus-2.netlify.com',
+  url: 'https://datagit.ir',
   baseUrl: '/',
   trailingSlash: false,
   organizationName: 'massoudmaboudi', // Usually your GitHub org/user name.
-  projectName: 'datagit_v2.docusaurus', // Usually your repo name.
+  projectName: 'datagit', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   // onBrokenMarkdownLinks:'ignore',
@@ -25,10 +30,6 @@ module.exports = {
     // Cannot be SVGs. Can be external URLs too.
     image: 'img/metaImage.png',
     hideableSidebar: true,
-    gtag: {
-      trackingID: 'G-98VZHCYVG8',
-    },
-
     colorMode: {
       // "light" | "dark"
       defaultMode: 'light',
@@ -40,7 +41,6 @@ module.exports = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-
       title: 'دیتاگیت',
       logo: {
         alt: 'لوگو دیتاگیت',
@@ -51,40 +51,81 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/python/introduction',
-          // activeBasePath: 'docs',
-          label: 'پایتون',
+          label: 'دسته‌بندی‌ها',
           position: 'left',
           items: [
             {
-              label: 'معرفی',
-              to: 'docs/python/introduction',
+              // to: 'docs/python/introduction',
+              // activeBasePath: 'docs',
+              label: 'پایتون',
+              to: 'courses/python',
+              // items: [
+              //   {
+              //     label: 'معرفی',
+              //     to: 'docs/python/introduction',
+              //   },
+              //   {
+              //     label: 'آموزش مقدماتی',
+              //     to: 'docs/python/beginner/introduction',
+              //   },
+              //   {
+              //     label: 'Matplotlib',
+              //     to: 'docs/',
+              //   },
+              // ],
             },
             {
-              label: 'آموزش مقدماتی',
-              to: 'docs/python/beginner/introduction',
+              to: 'courses/git',
+              label: 'گیت',
+              // position: 'left',
+              // items: [
+              //   {
+              //     label: 'معرفی',
+              //     to: 'docs/git/introduction',
+              //   },
+              //   {
+              //     label: 'آموزش مقدماتی',
+              //     to: 'docs/git/beginner/introduction',
+              //   },
+              // ],
             },
-            // {
-            //   label: 'Matplotlib',
-            //   to: 'docs/',
-            // },
-          ],
+          ]
         },
-        {
-          to: 'docs/git/introduction',
-          label: 'گیت',
-          position: 'left',
-          items: [
-            {
-              label: 'معرفی',
-              to: 'docs/git/introduction',
-            },
-            {
-              label: 'آموزش مقدماتی',
-              to: 'docs/git/beginner/introduction',
-            },
-          ],
-        },
+        // {
+        //   // to: 'docs/python/introduction',
+        //   // activeBasePath: 'docs',
+        //   label: 'پایتون',
+        //   position: 'left',
+        //   items: [
+        //     {
+        //       label: 'معرفی',
+        //       to: 'docs/python/introduction',
+        //     },
+        //     {
+        //       label: 'آموزش مقدماتی',
+        //       to: 'docs/python/beginner/introduction',
+        //     },
+        //     // {
+        //     //   label: 'Matplotlib',
+        //     //   to: 'docs/',
+        //     // },
+        //   ],
+        // },
+        // {
+        //   to: 'docs/git/introduction',
+        //   label: 'گیت',
+        //   position: 'left',
+        //   items: [
+        //     {
+        //       label: 'معرفی',
+        //       to: 'docs/git/introduction',
+        //     },
+        //     {
+        //       label: 'آموزش مقدماتی',
+        //       to: 'docs/git/beginner/introduction',
+        //     },
+        //   ],
+        // },
         {
           to: 'blog',
           label: 'وبلاگ',
@@ -95,6 +136,10 @@ module.exports = {
           label: "تماس با من",
           position: "right",
         },
+        {
+          type: 'localeDropdown',
+          position: 'right'
+        }
       ],
     },
     footer: {
@@ -102,9 +147,9 @@ module.exports = {
       // logo: {
       //   alt: 'لوگو دیتاگیت',
       //   src: 'img/logoGray.svg',
-      //   // href: 'https://datagit.ir',
+      //    href: 'https://datagit.ir',
       // },
-      copyright: `Massoud Maboudi - Datagit.ir © 2018-${new Date().getFullYear()}`,
+      copyright: `مسعود معبودی - دیتاگیت © 2018-${new Date().getFullYear()}`,
     },
 
     // CodeBlock Theme,
@@ -124,11 +169,19 @@ module.exports = {
           blogTitle: 'وبلاگ دیتاگیت!',
           blogDescription: 'جایی برای خواندن همه چیز!',
           showReadingTime: true,
-          blogSidebarTitle: 'مطالب اخیر'
+          blogSidebarTitle: 'مطالب اخیر',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 'ALL'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: 'G-98VZHCYVG8',
+        },
+        gtag: {
+          trackingID: 'G-RELC8K3RRZ',
+        }
       },
     ],
   ],
@@ -137,24 +190,37 @@ module.exports = {
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
-        max: 1030, // max resized image's size.
+        max: 1024, // max resized image's size.
         min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 4, // the max number of images generated between min and max (inclusive)
+        steps: 2, // the max number of images generated between min and max (inclusive)
       },
-    ],
-    ['@docusaurus/plugin-google-gtag',
-      {
-        id: 'gtag'
-      }
     ],
     [
       '@docusaurus/plugin-sitemap',
       {
-        id: 'sitemap',
+        id: 'sitemap_one',
         changefreq: 'weekly',
         priority: 0.5
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/blog/python-introduction', // string
+            from: '/docs/python/introduction',
+          },
+        ],
+      },
+    ],
+    // [
+    //   require.resolve("@easyops-cn/docusaurus-search-local"),
+    //   {
+    //     hashed: true,
+    //     language: ["en", "ar"],
+    //   },
+    // ],
   ],
   scripts: [
   ],

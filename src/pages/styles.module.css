@@ -1,82 +1,79 @@
-/* stylelint-disable docusaurus/copyright-header
-
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-/* var(--ifm-color-primary) */
-
-[class^="hero__title"] {
-  font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
-}
-
-[class^="hero__subtitle"] {
-  font-size: 0.9rem;
-  padding-bottom: 2rem;
-}
-
-[class^="heroBanner"] {
+.header {
   padding: 2rem 0;
-  height: calc(100vh - var(--ifm-navbar-height) - 54px);
+  height: calc(100vh - var(--ifm-navbar-height));
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
+  background-image: linear-gradient(
+      -40deg,
+      rgba(255, 255, 255, 0.8) 100%,
+      rgba(0, 132, 255, 0.1)
+    ),
+    url("/img/hero_1.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
 }
 
-[class^="col col--4 col--offset-1"] {
+.header_row_col__4_col__offset_1 {
   margin-bottom: auto;
   margin-top: 80px;
 }
 
-[class^="button button--outline button--primary button--lg"] {
-  background: #4042e2;
-  color: white;
-  border-style: none;
+.header_row_col__4_col__offset_1__title {
+  font-size: calc(var(--ifm-h1-font-size) * 5 / 4);
+}
+
+.header_row_col__4_col__offset_1__subtitle {
+  padding-bottom: 2rem;
+}
+
+.header_row_col__4_col__offset_1__getStarted {
   --ifm-button-size-multiplier: 1.2;
 }
 
-[class^="button button--outline button--primary button--lg"]:hover,
-[class^="button button--outline button--primary button--lg"]:active {
-  background: var(--ifm-color-primary-darkest);
-  border-color: var(--ifm-color-primary-darkest);
-}
-
 @media screen and (max-width: 996px) {
-  [class^="heroBanner"] {
+  .header {
     height: auto;
     padding: 0 2rem;
+    background-position: top;
   }
 
-  [class^="hero__subtitle"] {
+  .header_row_col__4_col__offset_1__subtitle {
     text-align: center;
   }
 
-  [class^="row"] {
+  .header_row {
     text-align: center;
   }
 
-  [class^="col col--4 col--offset-1"] {
+  .header_row_col__4_col__offset_1 {
     margin: auto;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
 
-  [class^="col"] {
+  .header_row_col__6_col__offset_1 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  [class^="heroBanner"] {
-    padding: 0 1rem;
+  .header {
+    padding: 0 0.2rem;
   }
 
-  [class^="hero__subtitle"] {
+  .header_row_col__4_col__offset_1__subtitle {
     padding-bottom: 1rem;
   }
 
-  [class^="button button--outline button--primary button--lg"] {
+  .header_row_col__4_col__offset_1__getStarted {
     --ifm-button-size-multiplier: 1;
+  }
+
+  .header_row_col__6_col__offset_1 {
+    padding-top: 2rem !important;
   }
 }

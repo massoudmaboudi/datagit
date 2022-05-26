@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Datagit",
+    "description": "The title in the navbar"
+  },
+  "item.label.دسته‌بندی‌ها": {
+    "message": "Categories",
+    "description": "Navbar item with label دسته‌بندی‌ها"
+  },
+  "item.label.وبلاگ": {
+    "message": "Blog",
+    "description": "Navbar item with label وبلاگ"
+  },
+  "item.label.تماس با من": {
+    "message": "Contact",
+    "description": "Navbar item with label تماس با من"
+  },
+  "item.label.پایتون": {
+    "message": "Python",
+    "description": "Navbar item with label پایتون"
+  },
+  "item.label.گیت": {
+    "message": "Git",
+    "description": "Navbar item with label گیت"
+  }
+}
