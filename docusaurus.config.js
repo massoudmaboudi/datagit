@@ -29,7 +29,6 @@ module.exports = {
     // Relative to your site's "static" directory.
     // Cannot be SVGs. Can be external URLs too.
     image: 'img/metaImage.png',
-    hideableSidebar: true,
     colorMode: {
       // "light" | "dark"
       defaultMode: 'light',
@@ -150,6 +149,12 @@ module.exports = {
       //    href: 'https://datagit.ir',
       // },
       copyright: `مسعود معبودی - دیتاگیت © 2018-${new Date().getFullYear()}`,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
     },
 
     // CodeBlock Theme,
