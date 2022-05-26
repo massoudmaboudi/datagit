@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatagit=self.webpackChunkdatagit||[]).push([[4364],{9501:function(t){t.exports=JSON.parse('{"permalink":"/en/blog","page":1,"postsPerPage":7,"totalPages":1,"totalCount":7,"blogDescription":"A place to read everything about programming!","blogTitle":"Datagit Blog!"}')}}]);

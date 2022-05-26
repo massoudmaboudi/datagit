@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatagit=self.webpackChunkdatagit||[]).push([[1713],{3457:function(a){a.exports=JSON.parse('[{"label":"Python","permalink":"/blog/tags/python","count":6},{"label":"IDE","permalink":"/blog/tags/ide","count":2},{"label":"macOS","permalink":"/blog/tags/mac-os","count":1},{"label":"Homebrew","permalink":"/blog/tags/homebrew","count":1}]')}}]);

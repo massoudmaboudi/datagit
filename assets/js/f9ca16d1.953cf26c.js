@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatagit=self.webpackChunkdatagit||[]).push([[8852],{3769:function(t){t.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
