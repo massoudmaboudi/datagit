@@ -74,8 +74,8 @@ module.exports = {
               // ],
             },
             {
-              to: 'courses/git',
-              label: 'گیت',
+              // to: 'courses/git',
+              // label: 'گیت',
               // position: 'left',
               // items: [
               //   {
@@ -213,8 +213,60 @@ module.exports = {
       {
         redirects: [
           {
-            to: '/blog/python-introduction', // string
             from: '/docs/python/introduction',
+            to: '/blog/python-introduction',
+          },
+          {
+            from: '/docs/python/beginner/km_zero/python_installation',
+            to: '/docs/courses/python/tutorials/beginner/get-started/the-easiest-solution',
+          },
+          {
+            from: '/blog/homebrew-installation',
+            to: '/blog/homebrew',
+          },
+          {
+            from: '/docs/python/beginner/introduction',
+            to: '/docs/courses/python/tutorials/beginner',
+          },
+          {
+            from: '/docs/python/beginner/introduction/variables',
+            to: '/docs/courses/python/tutorials/beginner/km-zero/variables',
+          },
+          {
+            from: '/docs/python/beginner/introduction/local_global_variables',
+            to: '/docs/courses/python/tutorials/beginner/functions/variable-scope',
+          },
+          {
+            from: '/docs/python/beginner/functions/function',
+            to: '/docs/courses/python/tutorials/beginner/functions/introduction',
+          },
+          {
+            from: '/docs/python/beginner/data_types/string',
+            to: '/docs/courses/python/tutorials/beginner/data-types-beginner/strings',
+          },
+          {
+            from: '/docs/python/beginner/data_types/list',
+            to: '/docs/courses/python/tutorials/beginner/data-types-advanced/list',
+          },
+          {
+            from: '/docs/python/beginner/data_types/tuple',
+            to: '/docs/courses/python/tutorials/beginner/data-types-advanced/tuple',
+          },
+          {
+            from: '/docs/python/beginner/data_types/set',
+            to: '/docs/courses/python/tutorials/beginner/data-types-advanced/set',
+          },
+          {
+            from: '/docs/python/beginner/data_types/dictionary',
+            to: '/docs/courses/python/tutorials/beginner/data-types-advanced/dictionary',
+          },
+          {
+            from: '/docs/python/beginner/flow_control/for_while',
+            to: '/docs/courses/python/tutorials/beginner/loops/for',
+          },
+          {
+            from: '/docs/python/beginner/flow_control/if_else',
+            to: '/docs/courses/python/tutorials/beginner/conditions/if-else',
           },
         ],
       },
