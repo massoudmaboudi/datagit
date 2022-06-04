@@ -6,11 +6,15 @@ module.exports = {
     localeConfigs: {
       'fa': {
         label: "فارسی",
-        direction: "rtl"
+        direction: "rtl",
+        htmlLang: 'fa-IR',
+        calendar: 'persian',
       },
       'en': {
         label: "English",
-        direction: "ltr"
+        direction: "ltr",
+        htmlLang: 'en-US',
+        calendar: 'gregory',
       }
     }
   },
