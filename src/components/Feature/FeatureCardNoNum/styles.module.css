@@ -4,15 +4,12 @@
   border-top-right-radius: 0;
   height: 100%;
 
-  transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
 }
 
 .featureCard:hover {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1) !important;
-
-  transform: scale(1.01);
-  -webkit-transform: scale(1.01);
+  box-shadow: var(--medium-shadow);
 }
 
 .featureCardImage {

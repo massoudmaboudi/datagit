@@ -3,7 +3,7 @@ import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import FeatureCheckbox from '../../../../components/Feature/FeatureCheckbox';
 // import FeatureSelect from '../../../../components/Feature/FeatureSelect';
-import FeatureCardNoImage from '../../../../components/Feature/FeatureCardNoImgNoNum';
+import FeatureCardNoImgNoNum from '../../../../components/Feature/FeatureCardNoImgNoNum';
 import styles from '../styles.module.css';
 import index from './index.module.css';
 import clsx from 'clsx';
@@ -239,7 +239,7 @@ function FeatureCards({ filteredCourses }: { filteredCourses: Course[] }) {
                     <div className={clsx("row", styles.main_row_container)}>
                         {filteredCourses.map((course) => (
                             <div key={course.title} className={clsx("col col--4 margin-bottom--lg", styles.main_card_col)}>
-                                <FeatureCardNoImage
+                                <FeatureCardNoImgNoNum
                                     key={course.title} // Title should be unique
                                     course={course}
                                 />

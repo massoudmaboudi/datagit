@@ -19,7 +19,64 @@
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 
-  --ifm-card-color: #fff;
+  /* darkest grey - used for headings */
+  --ifm-color-grey-1: hsl(209, 61%, 16%);
+  --ifm-color-grey-2: hsl(209, 61%, 8%);
+  --ifm-color-grey-3: hsl(209, 34%, 30%);
+  --ifm-color-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --ifm-color-grey-5: hsl(210, 22%, 49%);
+  --ifm-color-grey-7: hsl(209, 30%, 30%);
+  --ifm-color-grey-8: hsl(210, 31%, 80%);
+  --ifm-color-grey-9: hsl(212, 33%, 89%);
+  --ifm-color-grey-10: hsl(210, 36%, 96%);
+  --ifm-green-dark: hsl(125, 67%, 35%);
+  --ifm-red-dark: hsl(360, 67%, 44%);
+  --ifm-red-light: rgb(241, 73, 73);
+  --ifm-white: #fff;
+  --ifm-black: #000;
+  --radius: calc(var(--ifm-global-radius) / 2);
+
+  --transition: all 0.3s linear;
+
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --medium-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  --dark-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
+
+  --gray-900: #1a202c;
+  --gray-800: #2d3748;
+  --gray-700: #4a5568;
+  --gray-600: #718096;
+  --gray-500: #a0aec0;
+  --gray-400: #cbd5e0;
+  --gray-300: #e2e8f0;
+  --gray-200: #edf2f7;
+  --gray-100: #f7fafc;
+  --red-100: #fff5f5;
+  --red-200: #fed7d7;
+  --red-300: #feb2b2;
+  --red-400: #fc8181;
+  --red-500: #f56565;
+  --red-600: #e53e3e;
+  --red-700: #c53030;
+  --red-800: #9b2c2c;
+  --red-900: #742a2a;
+  --blue-100: #ebf8ff;
+  --blue-200: #bee3f8;
+  --blue-300: #90cdf4;
+  --blue-400: #63b3ed;
+  --blue-500: #4299e1;
+  --blue-600: #3182ce;
+  --blue-700: #2b6cb0;
+  --blue-800: #2c5282;
+  --blue-900: #2a4365;
+  --white: white;
+  --red: #f56565;
+  --text-decoration-color: var(--gray-400);
+  --text-color: var(--gray-800);
+  --focus-ring-color: var(--blue-500);
+
+  --ifm-card-color: var(--white);
 }
 
 button {
@@ -39,6 +96,11 @@ button {
 
 img {
   border-radius: calc(var(--ifm-global-radius) / 2);
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before,
+.pagination-nav__link--next .pagination-nav__label::after {
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Breadcrumb */

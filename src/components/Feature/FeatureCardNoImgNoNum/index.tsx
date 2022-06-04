@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import styles from './styles.module.css';
 import clsx from 'clsx';
 
-const FeatureCardNoImg = memo(function ({ course }: { course: any }) {
+const FeatureCardNoImgNoNum = memo(function ({ course }: { course: any }) {
   return (
     <a className={styles.course_feature_link} href={course.path}>
       <div className={clsx('card', styles.featureCard)}>
@@ -30,4 +30,4 @@ const FeatureCardNoImg = memo(function ({ course }: { course: any }) {
   );
 });
 
-export default FeatureCardNoImg;
+export default FeatureCardNoImgNoNum;

@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import styles from '../styles.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 
-import FeatureCard from '../../../components/Feature/FeatureCardNoNum';
+import FeatureCardNoNum from '../../../components/Feature/FeatureCardNoNum';
 
 const sectionsItems = [
     {
@@ -49,20 +49,20 @@ const sectionsItems = [
         path: './python/reference',
         cover: '/img/general/steps.svg'
     }
-]
+];
 
 
 const TITLE = translate({
     id: "pages.courses.python.main.title",
     message: "پایتون",
     description: "The main title in the Python course"
-})
+});
 
 const DESCRIPTION = translate({
     id: "pages.courses.python.main.description",
     message: "وبسایت دیتاگیت برای این راه اندازی شده که شاید کمک کوچکی باشه برای کسانی که دوست دارند برنامه نویسی رو یاد بگیرن ولی همیشه فکر میکنن که کار سختیه! توی این وبسایت به هم کمک میکنیم تا مسیر یادگیری رو برای همدیگه آسان تر کنیم.",
     description: "The main description in the Python course"
-})
+});
 
 const KEYWORDS = [
     'مسعود معبودی',
@@ -77,7 +77,7 @@ const KEYWORDS = [
     'مسعود معبودی دیتا گیت',
     'آموزش پایتون',
     'آموزش رایگان پایتون'
-]
+];
 
 const HEADER_TITLE =
     <Translate
@@ -85,13 +85,13 @@ const HEADER_TITLE =
         description="The header title in the Python course"
         values={{ TITLE: TITLE }}>
         {'{TITLE}'}
-    </Translate>
+    </Translate>;
 
 const HEADER_SUBTITLE = translate({
     id: "pages.courses.python.main.headerSubtitle",
     message: "پایتون یک زبان برنامه نویسی بسیار قدرتمند هست که در زمینه‌های مختلف مثل علم داده، ساخت وبسایت و حتی طراحی نرم افزار کاربرد داره.\n\nخوشبختانه این زبان قواعد ساده ای داره و برای همین یکی از بهترین گزینه‌ها برای شروع برنامه نویسی هستش.",
     description: "The header subtitle in the Python course"
-})
+});
 
 function FeatureCards({ sections }) {
     return (
@@ -99,7 +99,7 @@ function FeatureCards({ sections }) {
             <div className="row">
                 {sections.map((section) => (
                     <div key={section.title} className={clsx(styles.main_card_col, "col col--4 margin-bottom--lg")}>
-                        <FeatureCard
+                        <FeatureCardNoNum
                             key={section.title} // Title should be unique
                             course={section}
                         />
