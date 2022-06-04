@@ -21,7 +21,7 @@ const socialMedia = [
   },
   {
     imageUrl: '/img/socialMedia/whatsapp.png',
-    href: 'http://wa.me/905380471631',
+    href: 'http://wa.me/60183757685',
     alt: 'WhatsApp ID'
   },
   {
