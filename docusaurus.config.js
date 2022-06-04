@@ -73,7 +73,7 @@ module.exports = {
               //   },
               // ],
             },
-            {
+            // {
               // to: 'courses/git',
               // label: 'گیت',
               // position: 'left',
@@ -87,7 +87,7 @@ module.exports = {
               //     to: 'docs/git/beginner/introduction',
               //   },
               // ],
-            },
+            // },
           ]
         },
         // {
