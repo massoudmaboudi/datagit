@@ -51,6 +51,8 @@ module.exports = {
         // srcDark: 'img/logo_dark.svg', // Default to `logo.src`.
         // href: 'https://datagit.ir/', // Default to `siteConfig.baseUrl`.
         // target: '_self', // By default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one).
+        width: 32,
+        height: 32,
       },
       items: [
         {
