@@ -1,4 +1,4 @@
----
+<!-- ---
 id: dataframe
 # slug: /
 title: مقدمه
@@ -30,20 +30,20 @@ TRUE	F	2100000	1366	Zohre	6
 مقادیر توی هر ستون باید یه جنس داشته باشن. مثلا همشون عدد باشن.
 تابع ()data.frame
 با استفاده از این تابع میتونیم دیتا فریم رو پیاده سازی کنیم. کد پایین رو با دقت بخونید:
+```
+emp_data <_ data_frame(
 
-emp_data <- data.frame(
-   
-   ID = c(1:6), 
+   ID = c(1:6),
    Name = c("Massoud","Sahel","Sara","Hosein","Babak","Zohre"),
    Tavallod = c("1372", "1363", "1355", "1361", "1370", "1369"),
    Hoghough = c(1000000, 2500000, 900000, 1400000, 3000000, 2100000),
    Jensiat = c("M","F","F","M","M","F"),
    Mojarad = c(TRUE,FALSE,TRUE,TRUE,FALSE,TRUE),
-   
+
    stringsAsFactors = FALSE
  )
- print(emp_data) 
- 
+ print(emp_data)
+
  ID    Name Tavallod Hoghough Jensiat Mojarad
  1  1 Massoud     1372  1000000       M    TRUE
  2  2   Sahel     1363  2500000       F   FALSE
@@ -51,6 +51,7 @@ emp_data <- data.frame(
  4  4  Hosein     1361  1400000       M    TRUE
  5  5   Babak     1370  3000000       M   FALSE
  6  6   Zohre     1369  2100000       F    TRUE
+ ```
 همونطور که میبینید، یک متغیر به اسم emp_data تعریف کردیم و دیتا فریم رو توی اون گذاشتیم. به ازای هر ستون جدول هم معادل اون رو به عنوان پارامتر به تابع ()data.frame دادیم. یه پارامتر به اسم stringsAsFactors هم داریم که فعلا باهاش کار نداریم.
 
 تابع ()str
@@ -115,10 +116,10 @@ print(emp_data[,3])
 با استفاده از دو روش زیر میشه به دیتا فریم ستون اضافه کرد:
 
 #Raveshe Aval
- emp_data["Farzand"] <- c(0,2,0,0,1,0)
+ emp_data["Farzand"] <_ c_0_2_0_0_1_0_
  
  #Raveshe Dovom
- emp_data$Farzand <- c(0,2,0,0,1,0)
+ emp_data$Farzand <_ c(0,2,0,0,1,0)
  
  print(emp_data)
  ID    Name Tavallod Hoghough Jensiat Mojarad Farzand
@@ -228,4 +229,4 @@ print(emp_data[order(emp_data$Tavallod),])
  6  6   Zohre     1369  2100000       F    TRUE
  5  5   Babak     1370  3000000       M   FALSE
  1  1 Massoud     1372  1000000       M    TRUE
-دقت کنید که تمام ستون‌ها رو پرینت کردیم فقط ترتیب سطرها بر اساس خروجی تابع ()order هست.
+دقت کنید که تمام ستون‌ها رو پرینت کردیم فقط ترتیب سطرها بر اساس خروجی تابع ()order هست. -->
