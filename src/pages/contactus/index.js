@@ -11,7 +11,7 @@ const profilePicture = [
     imageUrl: '/img/general/massoudmaboudi.png',
     alt: 'Massoud Maboudi'
   }
-]
+];
 
 const socialMedia = [
   {
@@ -20,13 +20,13 @@ const socialMedia = [
     alt: 'Telegram ID'
   },
   {
-    imageUrl: '/img/socialMedia/whatsapp.png',
-    href: 'http://wa.me/60183757685',
-    alt: 'WhatsApp ID'
+    imageUrl: '/img/socialMedia/website.png',
+    href: 'https://iammassoud.net',
+    alt: 'Personal Website'
   },
   {
     imageUrl: '/img/socialMedia/email.png',
-    href: 'mailto:massoud.maboudi@gmail.com',
+    href: 'mailto:massoudmaboudi@gmail.com',
     alt: 'Email ID'
   },
   {
@@ -34,7 +34,7 @@ const socialMedia = [
     href: 'https://linkedin.com/in/massoud-maboudi',
     alt: 'LinkedIn Profile'
   }
-]
+];
 
 function ProfilePicture({ title, description, imageUrl, alt }) {
   return (
